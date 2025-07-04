@@ -637,7 +637,7 @@
       let table = document.getElementById('dataTable');
       let rows = table.getElementsByTagName('tr');
 
-      for (let i = 1; i < script script script script script script script rows.length; i++) {
+      for (let i = 1; i <  rows.length; i++) {
         let cells = rows[i].getElementsByTagName('td');
         let nameCell = cells[1]; // Name column (2nd column)
         if (nameCell) {
@@ -650,7 +650,7 @@
         }
       }
     }
-  </>
+  </script>
 
   <section class="py-6">
     <h1 class="text-3xl font-semibold text-center text-[#271E59]">Disciplinary Committee</h1>
@@ -729,54 +729,96 @@
     }
   </script>
 
-  <section class="py-6">
-    <h1 class="text-3xl font-semibold text-center text-[#271E59]">CPE Committee</h1>
-    <div class="overflow-x-auto px-4 py-6">
-      <div class="ea-advanced-data-table-wrap">
-        <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
-          <input type="search" id="searchCPE" placeholder="Search"
-            class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto"
-            onkeyup="filterCPECommitteeTable()">
-        </div>
-
-        <table id="cpeTable" class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
-          <thead class="bg-gray-100 text-xs font-semibold uppercase">
-            <tr>
-              <th class="px-4 py-2 border">S.No</th>
-              <th class="px-4 py-2 border">Name</th>
-              <th class="px-4 py-2 border">Designation</th>
-              <th class="px-4 py-2 border">Phone</th>
-              <th class="px-4 py-2 border">Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-white">
-              <td class="px-4 py-2 border">1</td>
-              <td class="px-4 py-2 border">CA RAVINDRA KUMAR</td>
-              <td class="px-4 py-2 border">CHAIRMAN</td>
-              <td class="px-4 py-2 border">8789431228</td>
-              <td class="px-4 py-2 border">ravindra@gmail.com</td>
-            </tr>
-            <tr class="bg-white">
-              <td class="px-4 py-2 border">2</td>
-              <td class="px-4 py-2 border">CA SURESH KUMAR</td>
-              <td class="px-4 py-2 border">MEMBER</td>
-              <td class="px-4 py-2 border">9012384747</td>
-              <td class="px-4 py-2 border">surekumar@gmail.com</td>
-            </tr>
-            <tr class="bg-white">
-              <td class="px-4 py-2 border">3</td>
-              <td class="px-4 py-2 border">CA SHYAM KUMAR</td>
-              <td class="px-4 py-2 border">MEMBER</td>
-              <td class="px-4 py-2 border">9162429944</td>
-              <td class="px-4 py-2 border">caskr2018@gmail.com</td>
-            </tr>
-
-          </tbody>
-        </table>
+<section class="py-6">
+  <h1 class="text-3xl font-semibold text-center text-[#271E59]">CPE Committee</h1>
+  <div class="overflow-x-auto px-4 py-6">
+    <div class="ea-advanced-data-table-wrap">
+      <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
+        <input type="search" id="searchCPE" placeholder="Search"
+          class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto"
+          onkeyup="filterCPECommitteeTable()">
       </div>
+
+      <table id="cpeTable" class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
+        <thead class="bg-gray-100 text-xs font-semibold uppercase">
+          <tr>
+            <th class="px-4 py-2 border">S.No</th>
+            <th class="px-4 py-2 border">Name</th>
+            <th class="px-4 py-2 border">Designation</th>
+            <th class="px-4 py-2 border">Phone</th>
+            <th class="px-4 py-2 border">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">1</td>
+            <td class="px-4 py-2 border">CA. Shashi Bhushan Kumar</td>
+            <td class="px-4 py-2 border">Chairman</td>
+            <td class="px-4 py-2 border">7761952501</td>
+            <td class="px-4 py-2 border">cashashi2007@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">2</td>
+            <td class="px-4 py-2 border">CA. Vikash Kumar Singh</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9661448568</td>
+            <td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">3</td>
+            <td class="px-4 py-2 border">CA. Ankit Hisaria</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9038825030</td>
+            <td class="px-4 py-2 border">cahisaria@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">4</td>
+            <td class="px-4 py-2 border">CA. Rakesh Kumar Sinha</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9199525618</td>
+            <td class="px-4 py-2 border">carakeshsinha10@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">5</td>
+            <td class="px-4 py-2 border">CA. Niket Nathani</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">7542032616</td>
+            <td class="px-4 py-2 border">niketnathani.001@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">6</td>
+            <td class="px-4 py-2 border">CA. Abhijeet Ranjan</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9905606888</td>
+            <td class="px-4 py-2 border">abhijeet.icai@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">7</td>
+            <td class="px-4 py-2 border">CA. Prakash Kumar</td>
+            <td class="px-4 py-2 border">Co-Opted Member</td>
+            <td class="px-4 py-2 border">7739481200</td>
+            <td class="px-4 py-2 border">acapk2019@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">8</td>
+            <td class="px-4 py-2 border">CA. Munna Kumar Singh</td>
+            <td class="px-4 py-2 border">Co-Opted Member</td>
+            <td class="px-4 py-2 border">7070852455</td>
+            <td class="px-4 py-2 border">fcamunnasingh@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">9</td>
+            <td class="px-4 py-2 border">CA. Ayush Nemani</td>
+            <td class="px-4 py-2 border">Co-Opted Member</td>
+            <td class="px-4 py-2 border">8235147608</td>
+            <td class="px-4 py-2 border">ayushnemani1995@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <script>
     function filterCPECommitteeTable() {
@@ -801,46 +843,95 @@
   </script>
 
   <section class="py-6">
-    <h1 class="text-3xl font-semibold text-center text-[#271E59]">CICASA Committee</h1>
-    <div class="overflow-x-auto px-4 py-6">
-      <div class="ea-advanced-data-table-wrap">
-        <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
-          <input type="search" id="searchCICASA" placeholder="Search"
-            class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto" onkeyup="filterCICASATable()">
-        </div>
-
-        <table id="cicasaTable"
-          class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
-          <thead class="bg-gray-100 text-xs font-semibold uppercase">
-            <tr>
-              <th class="px-4 py-2 border">S.No</th>
-              <th class="px-4 py-2 border">Name</th>
-              <th class="px-4 py-2 border">Designation</th>
-              <th class="px-4 py-2 border">Phone</th>
-              <th class="px-4 py-2 border">Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-white">
-              <td class="px-4 py-2 border">1</td>
-              <td class="px-4 py-2 border">CA RAVI KUMAR</td>
-              <td class="px-4 py-2 border">CHAIRMAN</td>
-              <td class="px-4 py-2 border">8789431228</td>
-              <td class="px-4 py-2 border">ravikumar@gmail.com</td>
-            </tr>
-            <tr class="bg-white">
-              <td class="px-4 py-2 border">2</td>
-              <td class="px-4 py-2 border">CA MOHAN KUMAR</td>
-              <td class="px-4 py-2 border">MEMBER</td>
-              <td class="px-4 py-2 border">9162436224</td>
-              <td class="px-4 py-2 border">mohankumar@gmail.com</td>
-            </tr>
-
-          </tbody>
-        </table>
+  <h1 class="text-3xl font-semibold text-center text-[#271E59]">CICASA Committee</h1>
+  <div class="overflow-x-auto px-4 py-6">
+    <div class="ea-advanced-data-table-wrap">
+      <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
+        <input type="search" id="searchCICASA" placeholder="Search"
+          class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto" onkeyup="filterCICASATable()">
       </div>
+
+      <table id="cicasaTable"
+        class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
+        <thead class="bg-gray-100 text-xs font-semibold uppercase">
+          <tr>
+            <th class="px-4 py-2 border">S.No</th>
+            <th class="px-4 py-2 border">Name</th>
+            <th class="px-4 py-2 border">Designation</th>
+            <th class="px-4 py-2 border">Phone</th>
+            <th class="px-4 py-2 border">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">1</td>
+            <td class="px-4 py-2 border">CA. Vikash Kumar Singh</td>
+            <td class="px-4 py-2 border">Chairman</td>
+            <td class="px-4 py-2 border">9661448568</td>
+            <td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">2</td>
+            <td class="px-4 py-2 border">CA. Shashi Bhushan Kumar</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">7761952501</td>
+            <td class="px-4 py-2 border">cashashi2007@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">3</td>
+            <td class="px-4 py-2 border">CA. Ankit Hisaria</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9038825030</td>
+            <td class="px-4 py-2 border">cahisaria@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">4</td>
+            <td class="px-4 py-2 border">CA. Rakesh Kumar Sinha</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9199525618</td>
+            <td class="px-4 py-2 border">carakeshsinha10@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">5</td>
+            <td class="px-4 py-2 border">CA. Niket Nathani</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">7542032616</td>
+            <td class="px-4 py-2 border">niketnathani.001@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">6</td>
+            <td class="px-4 py-2 border">CA. Abhijeet Ranjan</td>
+            <td class="px-4 py-2 border">MCM</td>
+            <td class="px-4 py-2 border">9905606888</td>
+            <td class="px-4 py-2 border">abhijeet.icai@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">7</td>
+            <td class="px-4 py-2 border">CA. Saurabh Kumar</td>
+            <td class="px-4 py-2 border">Co-Opted Member</td>
+            <td class="px-4 py-2 border">8130262999</td>
+            <td class="px-4 py-2 border">sabyca@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">8</td>
+            <td class="px-4 py-2 border">CA. Rajesh Kumar</td>
+            <td class="px-4 py-2 border">Co-Opted Member</td>
+            <td class="px-4 py-2 border">8882226429</td>
+            <td class="px-4 py-2 border">rajeshkumar823@gmail.com</td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-4 py-2 border">9</td>
+            <td class="px-4 py-2 border">CA. Aditya Kumar Tulsyan</td>
+            <td class="px-4 py-2 border">Co-Opted Member</td>
+            <td class="px-4 py-2 border">6202386824</td>
+            <td class="px-4 py-2 border">caadityatulsyan@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
+  </div>
+</section>
+
   <script>
     function filterCICASATable() {
       let input = document.getElementById('searchCICASA');
