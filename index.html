@@ -69,7 +69,7 @@
 
 <body class="bg-gray-50 text-gray-800">
   <!-- ICAI Header Start -->
-  <div class="bg-secondary flex items-center justify-between py-4 px-4 shadow-md hidden sm:flex">
+  <div class="bg-primary  bg-[#05007e] flex items-center justify-between py-4 px-4 shadow-md hidden sm:flex">
     <!-- Logo -->
     <a href="https://icaidbg.org" class="flex-shrink-0">
       <img src="https://icaidbg.org/wp-content/uploads/2024/09/cropped-cropped-icai_logo__1_-removebg-preview.png"
@@ -778,7 +778,7 @@
       </div>
     </div>
   </section>
-
+  <!-- News And Events -->
   <section class="hidden md:flex bg-white px-6 py-8 gap-6">
     <!-- Upcoming Events Card (Left Column - 1/3) -->
     <div class="w-1/3 mt-8">
@@ -830,15 +830,17 @@
 
     <!-- Motto Card (Middle Column - 1/3) -->
     <div class="w-1/3 mt-8">
-      <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden h-full flex flex-col">
-        <h2 class="text-3xl font-semibold text-white text-center bg-[#05007e] px-4 py-4 mb-0">
+      <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col">
+        <h2 class="text-3xl font-semibold text-white text-center bg-[#05007e] px-4 py-4">
           Our Motto
         </h2>
         <div class="p-6 flex flex-col justify-between flex-grow">
           <div class="text-center mb-4">
-            <img loading="lazy" decoding="async"
-              src="https://icaidbg.org/wp-content/uploads/2024/12/Picsart_24-12-04_14-40-30-482-scaled.jpg"
-              alt="Event Poster" class="w-full h-48 object-cover rounded-lg mx-auto mb-4" />
+            <div class="aspect-video w-full rounded-lg overflow-hidden">
+              <img loading="lazy" decoding="async"
+                src="https://icaidbg.org/wp-content/uploads/2024/12/Picsart_24-12-04_14-40-30-482-scaled.jpg"
+                alt="Event Poster" class="w-full h-full object-cover" />
+            </div>
           </div>
           <div class="text-center flex-grow flex flex-col justify-center">
             <h3 class="text-xl font-bold text-[#294a70] mb-3">
@@ -853,6 +855,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!-- ICAI Muzaffarpur Info Card (Right Column - 1/3) -->
     <div class="w-1/3 mt-8">
@@ -1329,13 +1333,13 @@
             <a href="#" class="block text-white hover:text-blue-300 transition duration-200">
               Home
             </a>
-            <a href="#about" class="block text-white hover:text-blue-300 transition duration-200">
+            <a href="about.html" class="block text-white hover:text-blue-300 transition duration-200">
               About Us
             </a>
-            <a href="#services" class="block text-white hover:text-blue-300 transition duration-200">
+            <a href="contiMuzaffarpur.html" class="block text-white hover:text-blue-300 transition duration-200">
               Services
             </a>
-            <a href="#events" class="block text-white hover:text-blue-300 transition duration-200">
+            <a href="MembersEvents.html" class="block text-white hover:text-blue-300 transition duration-200">
               Events
             </a>
           </div>
@@ -1396,16 +1400,13 @@
         <div class="flex flex-col items-center sm:items-start">
           <h2 class="text-lg font-semibold mb-2">Follow Us</h2>
           <div class="flex space-x-4">
-            <a href="#" target="_blank"
-              class="hover:text-blue-400 transition duration-200 transform hover:scale-110">
+            <a href="#" target="_blank" class="hover:text-blue-400 transition duration-200 transform hover:scale-110">
               <i class="fab fa-twitter fa-2x p-2 bg-white/10 rounded-full"></i>
             </a>
-            <a href="#" target="_blank"
-              class="hover:text-pink-400 transition duration-200 transform hover:scale-110">
+            <a href="#" target="_blank" class="hover:text-pink-400 transition duration-200 transform hover:scale-110">
               <i class="fab fa-instagram fa-2x p-2 bg-white/10 rounded-full"></i>
             </a>
-            <a href="#" target="_blank"
-              class="hover:text-blue-300 transition duration-200 transform hover:scale-110">
+            <a href="#" target="_blank" class="hover:text-blue-300 transition duration-200 transform hover:scale-110">
               <i class="fab fa-facebook fa-2x p-2 bg-white/10 rounded-full"></i>
             </a>
           </div>
