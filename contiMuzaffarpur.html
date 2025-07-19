@@ -485,12 +485,12 @@
 
 
 <!-- Committees Hero Section -->
-<section class="bg-[#f1f4f9] py-20 px-4 sm:px-6 lg:px-8">
+<section class="bg-[#f1f4f9] pt-28 pb-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-[#271E59] mb-4">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#271E59] mb-4 leading-tight">
       Committees of Muzaffarpur
     </h1>
-    <p class="text-lg sm:text-xl text-gray-700 font-medium">
+    <p class="text-base sm:text-lg md:text-xl text-gray-700 font-medium">
       Explore the dedicated committees of the 
       <span class="text-[#294a70] font-semibold">Muzaffarpur Branch of CIRC of ICAI</span> 
       – working together to promote excellence, ethics, and professional development.
@@ -505,31 +505,34 @@
 
 
 
+
 <!-- committe Members -->
 
 <h1 class="text-3xl sm:text-4xl font-bold text-center text-[#271E59] mt-12 mb-4">
   Managing Committee
 </h1>
-<section class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
- 
 
-  <!-- Cards Slider -->
-  <div class="overflow-hidden">
-    <div id="slider" class="flex   duration-500 space-x-4">
+
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<section class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <!-- Cards Slider (Scrollable on small screens) -->
+  <div class="overflow-x-auto scrollbar-hide -mx-4 px-4">
+    <div id="slider" class="flex gap-4 transition-transform duration-500 ease-in-out">
       <!-- Cards injected by JS -->
     </div>
   </div>
 
-  <!-- Navigation Buttons -->
-<div class="flex justify-center gap-4 mt-10">
-  <button onclick="moveSlide(-1)" class="bg-[#271E59] text-white px-5 py-2 border border-[#271E59] rounded-full hover:bg-white hover:text-[#271E59] transition">
-    ← Previous
-  </button>
-  <button onclick="moveSlide(1)" class="bg-[#271E59] text-white px-5 py-2 border border-[#271E59] rounded-full hover:bg-white hover:text-[#271E59] transition">
-    Next →
-  </button>
-</div>
-
+  <!-- Navigation Buttons (Now visible on all screen sizes) -->
+  <div class="flex justify-center gap-4 mt-10">
+    <button onclick="moveSlide(-1)" class="bg-[#271E59] text-white px-5 py-2 border border-[#271E59] rounded-full hover:bg-white hover:text-[#271E59] transition">
+      ← Previous
+    </button>
+    <button onclick="moveSlide(1)" class="bg-[#271E59] text-white px-5 py-2 border border-[#271E59] rounded-full hover:bg-white hover:text-[#271E59] transition">
+      Next →
+    </button>
+  </div>
 </section>
 
 <script>
@@ -584,7 +587,7 @@
   function createCard(member) {
     return `
       <div class="bg-white border rounded-xl shadow-md w-56 shrink-0 p-4 flex flex-col items-center text-center hover:shadow-lg transition">
-        <img src="${member.image}" alt="${member.name}" class="w-28 h-28 object-cover rounded-full  mb-4" />
+        <img src="${member.image}" alt="${member.name}" class="w-28 h-28 object-cover rounded-full mb-4" />
         <h2 class="text-base font-semibold text-[#271E59]">${member.name}</h2>
         <p class="text-sm text-gray-500 mb-3">${member.role}</p>
         <div class="flex justify-center gap-4 text-[#271E59] text-lg">
@@ -602,18 +605,31 @@
   }
 
   function updateSlider() {
-    const offset = currentIndex * -240; // card width + margin
+    const offset = currentIndex * -240; // Adjust card width for shifting
     slider.style.transform = `translateX(${offset}px)`;
   }
 
   function moveSlide(direction) {
-    const maxIndex = members.length - 5;
+    const maxIndex = members.length - 1;
     currentIndex = Math.min(Math.max(currentIndex + direction, 0), maxIndex);
     updateSlider();
   }
 
   renderSlider();
 </script>
+
+<style>
+  /* Optional scrollbar hiding for aesthetics */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+
 
 
 
