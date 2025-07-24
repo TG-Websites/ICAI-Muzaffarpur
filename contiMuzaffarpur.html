@@ -484,24 +484,33 @@
   </script>
 
 
-<!-- Committees Hero Section -->
-<section class="bg-[#f1f4f9] pt-28 pb-20 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#271E59] mb-4 leading-tight">
+<!-- Committees Hero Section with Background Image -->
+<section class="relative bg-cover bg-center bg-no-repeat min-h-[90vh] px-4 sm:px-6 lg:px-8 flex items-center justify-center text-center"
+         style="background-image: url('image/Mannaging\ \ members.jpg');">
+  
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+  <!-- Centered Content -->
+  <div class="relative z-10 max-w-4xl mx-auto text-white">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
       Committees of Muzaffarpur
     </h1>
-    <p class="text-base sm:text-lg md:text-xl text-gray-700 font-medium">
+    <p class="text-base sm:text-lg md:text-xl font-medium">
       Explore the dedicated committees of the 
-      <span class="text-[#294a70] font-semibold">Muzaffarpur Branch of CIRC of ICAI</span> 
+     Muzaffarpur Branch of CIRC of ICAI
       – working together to promote excellence, ethics, and professional development.
     </p>
 
     <!-- Decorative underline -->
     <div class="mt-6 flex justify-center">
-      <span class="w-16 h-1 bg-[#294a70] rounded-full"></span>
+      <span class="w-16 h-1 bg-[#f0c93d] rounded-full"></span>
     </div>
   </div>
 </section>
+
+
+
 
 
 
@@ -579,13 +588,7 @@
       email: "abhijeet.icai@gmail.com",
       image: "image/output 6.png"
     },
-      {
-      name: "CA Niket Nathani",
-      role: "MCM",
-      phone: "7761952501",
-      email: "shashi2007@gmail.com",
-      image: "image/output (1).png"
-    }
+   
   ];
 
   const slider = document.getElementById("slider");
@@ -897,121 +900,66 @@
     }
   </script>
 
-<!-- cicasa Committee -->
 
-  <section class="py-6">
-  <h1 class="text-3xl font-semibold text-center text-[#271E59]">CICASA Committee</h1>
+<!-- Students Committee Section -->
+<section class="py-6">
+  <h1 class="text-3xl font-semibold text-center text-[#271E59]">Students Committee</h1>
+  <p class="text-center text-gray-600 mt-2 max-w-3xl mx-auto">
+    Objective of this Sub-Committee is to assist the Managing Committee in the functioning of the Branch.
+  </p>
   <div class="overflow-x-auto px-4 py-6">
     <div class="ea-advanced-data-table-wrap">
       <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
-        <input type="search" id="searchCICASA" placeholder="Search"
-          class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto" onkeyup="filterCICASATable()">
+        <input type="search" id="searchStudents" placeholder="Search"
+          class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto" onkeyup="filterStudentsTable()">
       </div>
 
-      <table id="cicasaTable"
+      <table id="studentsTable"
         class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
         <thead class="bg-gray-100 text-xs font-semibold uppercase">
           <tr>
             <th class="px-4 py-2 border">S.No</th>
             <th class="px-4 py-2 border">Name</th>
-            <th class="px-4 py-2 border">Designation</th>
-            <th class="px-4 py-2 border">Phone</th>
-            <th class="px-4 py-2 border">Email</th>
+            <th class="px-4 py-2 border">Position</th>
+            <th class="px-4 py-2 border">Mob. Number</th>
+            <th class="px-4 py-2 border">E-Mail ID</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">1</td>
-            <td class="px-4 py-2 border">CA. Vikash Kumar Singh</td>
-            <td class="px-4 py-2 border">Chairman</td>
-            <td class="px-4 py-2 border">9661448568</td>
-            <td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">2</td>
-            <td class="px-4 py-2 border">CA. Shashi Bhushan Kumar</td>
-            <td class="px-4 py-2 border">MCM</td>
-            <td class="px-4 py-2 border">7761952501</td>
-            <td class="px-4 py-2 border">cashashi2007@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">3</td>
-            <td class="px-4 py-2 border">CA. Ankit Hisaria</td>
-            <td class="px-4 py-2 border">MCM</td>
-            <td class="px-4 py-2 border">9038825030</td>
-            <td class="px-4 py-2 border">cahisaria@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">4</td>
-            <td class="px-4 py-2 border">CA. Rakesh Kumar Sinha</td>
-            <td class="px-4 py-2 border">MCM</td>
-            <td class="px-4 py-2 border">9199525618</td>
-            <td class="px-4 py-2 border">carakeshsinha10@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">5</td>
-            <td class="px-4 py-2 border">CA. Niket Nathani</td>
-            <td class="px-4 py-2 border">MCM</td>
-            <td class="px-4 py-2 border">7542032616</td>
-            <td class="px-4 py-2 border">niketnathani.001@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">6</td>
-            <td class="px-4 py-2 border">CA. Abhijeet Ranjan</td>
-            <td class="px-4 py-2 border">MCM</td>
-            <td class="px-4 py-2 border">9905606888</td>
-            <td class="px-4 py-2 border">abhijeet.icai@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">7</td>
-            <td class="px-4 py-2 border">CA. Saurabh Kumar</td>
-            <td class="px-4 py-2 border">Co-Opted Member</td>
-            <td class="px-4 py-2 border">8130262999</td>
-            <td class="px-4 py-2 border">sabyca@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">8</td>
-            <td class="px-4 py-2 border">CA. Rajesh Kumar</td>
-            <td class="px-4 py-2 border">Co-Opted Member</td>
-            <td class="px-4 py-2 border">8882226429</td>
-            <td class="px-4 py-2 border">rajeshkumar823@gmail.com</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="px-4 py-2 border">9</td>
-            <td class="px-4 py-2 border">CA. Aditya Kumar Tulsyan</td>
-            <td class="px-4 py-2 border">Co-Opted Member</td>
-            <td class="px-4 py-2 border">6202386824</td>
-            <td class="px-4 py-2 border">caadityatulsyan@gmail.com</td>
-          </tr>
+          <tr><td class="px-4 py-2 border">1</td><td class="px-4 py-2 border">CA. NIKET NATHANI</td><td class="px-4 py-2 border">Chairman</td><td class="px-4 py-2 border">7542032616</td><td class="px-4 py-2 border">niketnathani.001@gmail.com</td></tr>
+          <tr><td class="px-4 py-2 border">2</td><td class="px-4 py-2 border">CA. SHASHI BHUSHAN KUMAR</td><td class="px-4 py-2 border">MCM</td><td class="px-4 py-2 border">7761952501</td><td class="px-4 py-2 border">cashashi2007@gmail.com</td></tr>
+          <tr><td class="px-4 py-2 border">3</td><td class="px-4 py-2 border">CA. VIKASH KUMAR SINGH</td><td class="px-4 py-2 border">MCM</td><td class="px-4 py-2 border">9661448568</td><td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td></tr>
+          <tr><td class="px-4 py-2 border">4</td><td class="px-4 py-2 border">CA. ANKIT HISARIA</td><td class="px-4 py-2 border">MCM</td><td class="px-4 py-2 border">9038825030</td><td class="px-4 py-2 border">cahisaria@gmail.com</td></tr>
+          <tr><td class="px-4 py-2 border">5</td><td class="px-4 py-2 border">CA. RAKESH KUMAR SINHA</td><td class="px-4 py-2 border">MCM</td><td class="px-4 py-2 border">9199525618</td><td class="px-4 py-2 border">carakeshsinha10@gmail.com</td></tr>
+          <tr><td class="px-4 py-2 border">6</td><td class="px-4 py-2 border">CA. ABHIJEET RANJAN</td><td class="px-4 py-2 border">MCM</td><td class="px-4 py-2 border">9905606888</td><td class="px-4 py-2 border">abhijeet.icai@gmail.com</td></tr>
+          <tr><td class="px-4 py-2 border">7</td><td class="px-4 py-2 border">CA. HIMANSHU KUMAR NATHANI</td><td class="px-4 py-2 border">Co-Opted Member</td><td class="px-4 py-2 border">9555393149</td><td class="px-4 py-2 border">himanshu.nathani@gmail.com</td></tr>
+          <tr><td class="px-4 py-2 border">8</td><td class="px-4 py-2 border">CA. AJEET KUMAR</td><td class="px-4 py-2 border">Co-Opted Member</td><td class="px-4 py-2 border">8700979603</td><td class="px-4 py-2 border">ajeet.pr1992@yahoo.com</td></tr>
+          <tr><td class="px-4 py-2 border">9</td><td class="px-4 py-2 border">CA. RAJNISH KUMAR</td><td class="px-4 py-2 border">Co-Opted Member</td><td class="px-4 py-2 border">9015552470</td><td class="px-4 py-2 border">cakumarrajnish@gmail.com</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
+<script>
+  function filterStudentsTable() {
+    let input = document.getElementById('searchStudents');
+    let filter = input.value.toUpperCase();
+    let table = document.getElementById('studentsTable');
+    let rows = table.getElementsByTagName('tr');
 
-
-  <script>
-    function filterCICASATable() {
-      let input = document.getElementById('searchCICASA');
-      let filter = input.value.toUpperCase();
-      let table = document.getElementById('cicasaTable');
-      let rows = table.getElementsByTagName('tr');
-
-      for (let i = 1; i < rows.length; i++) {
-        let cells = rows[i].getElementsByTagName('td');
-        let nameCell = cells[1]; // Name column (2nd column)
-        if (nameCell) {
-          let textValue = nameCell.textContent || nameCell.innerText;
-          if (textValue.toUpperCase().indexOf(filter) > -1) {
-            rows[i].style.display = ''; // Show row
-          } else {
-            rows[i].style.display = 'none'; // Hide row
-          }
-        }
+    for (let i = 1; i < rows.length; i++) {
+      let cells = rows[i].getElementsByTagName('td');
+      let nameCell = cells[1];
+      if (nameCell) {
+        let textValue = nameCell.textContent || nameCell.innerText;
+        rows[i].style.display = textValue.toUpperCase().indexOf(filter) > -1 ? '' : 'none';
       }
     }
-  </script>
+  }
+</script>
+
+
 
 <!-- footer Section -->
 
