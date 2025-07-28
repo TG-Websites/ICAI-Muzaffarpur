@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <title>ICAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="theme.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .custom-nav {
+      width: 30px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.248);
+      /* light gray background */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .custom-nav::after {
+      font-size: 18px;
+      /* smaller arrow */
+      color: #d7d8e1;
+      /* arrow color */
+    }
+
+    .custom-nav:hover {
+      background-color: rgba(98, 78, 159, 0.625);
+      /* darker on hover */
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      animation: marquee 20s linear infinite;
+    }
+
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    .background-container {
+      position: relative;
+      background-color: rgb(253, 252, 254);
+      background-image: none;
+      /* Remove background image */
+    }
+
+    .background-container::after {
+      content: none;
+      /* Remove overlay */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ICAI Header Start -->
+  <div class="bg-primary  bg-[#05007e] flex items-center justify-between py-4 px-4 shadow-md hidden sm:flex">
+    <!-- Logo -->
+    <a href="https://icaidbg.org" class="flex-shrink-0">
+      <img src="https://icaidbg.org/wp-content/uploads/2024/09/cropped-cropped-icai_logo__1_-removebg-preview.png"
+        alt="ICAI Logo" class="w-[100px] h-[100px] transform scale-110" />
+    </a>
+    <!-- Text center -->
+    <div class="text-center flex-1">
+      <h2 class="text-xl sm:text-2xl font-semibold leading-snug text-white">
+        Muzaffarpur Distric Branch of CIRC of <br />
+        The Institute of Chartered Accountants of India <br />
+        <span class="text-base sm:text-lg text-white font-normal">(Setup By An Act of Parliament)</span>
+      </h2>
+    </div>
+  </div>
+
+  <!-- Main Navbar with Top Border -->
+  <nav class="border-t-2 bg-[#05007e] text-white fixed top-0 left-0 w-full z-50 sm:static">
+    <div class="container mx-auto px-4">
+      <!-- Hamburger Icon (Visible on small screens) -->
+      <div class="flex justify-between items-center py-3 md:hidden">
+        <a href="" class="flex-shrink-0">
+          <img src="https://icaidbg.org/wp-content/uploads/2024/09/cropped-cropped-icai_logo__1_-removebg-preview.png"
+            alt="ICAI Logo" class="w-[70px] h-[70px] transform scale-110" />
+        </a>
+        <button id="hamburger-icon" class="text-white text-2xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Menu (For Mobile & Desktop) -->
+      <ul id="navbar" class="h-10 hidden md:flex flex-wrap justify-center space-x-6">
+        <li class="relative group border-r-2 border-white pr-4 py-2">
+          <a href="index.html"
+            class="hover:text-blue-200 flex items-center gap-1 transition-transform hover:-translate-y-1 duration-200">Home</a>
+        </li>
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Overview
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+            <a href="about.html" class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">About ICAI
+              Muzaffarpur</a>
+            <a href="https://www.icai.org/overview.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">The Council</a>
+            <a href="https://www.icai.org/overview.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">ICAI Network</a>
+            <a href="https://www.icai.org/overview.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Key Statics</a>
+            <a href="https://www.icai.org/overview.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Right To Information Act</a>
+            <a href="https://www.icai.org/overview.shtml?mod=6"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Annual Report</a>
+            <a href="https://www.icai.org/overview.shtml?mod=7"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Year Books – ICAI</a>
+            <a href="https://circ.icai.org/"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Central Council</a>
+          </div>
+        </li>
+
+        <!-- Dropdown for Members -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Committees
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+            <a href="contiMuzaffarpur.html"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Committees Of Muzaffarpur</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Standing</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Non – Standing</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Directorates</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Others</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Secretarie To The Committee</a>
+          </div>
+        </li>
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Members
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+            <a href="MembersEvents.html"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Events</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Council Guidelines</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Courses</a>
+
+            <a href="https://www.icai.org/post/election-2024"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Election 2024</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Empanelment</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Examination</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=6"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Funds/Awards</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=7"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Members – FAQs</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=8"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Placements</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=9"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Regulatory</a>
+          </div>
+        </li>
+
+        <!-- Students Dropdown -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Students
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+            <a href="https://www.icai.org/students.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Announcements</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">BoS Knowledge Portal</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Chartered Accountancy Course</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Examination</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Students – FAQs</a>
+          </div>
+        </li>
+
+        <!-- Resources Dropdown -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Resources
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-80 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+            <a href="https://www.icai.org/resources.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Accounting Standards</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Accounting Standards for Local
+              Bodies</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">List of Exposure Drafts</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Guidance Notes</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">ICAI Valuation Standards</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=6"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Standards on Internal Audit</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=7"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Engagement and Quality Control
+              Standards</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=8"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Recent Opinions & Advisory Service
+              Rules of Expert Advisory
+              Committee</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=9"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Free Download – Online
+              Publications</a>
+          </div>
+        </li>
+
+        <!-- E-Services Dropdown -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            E-Services
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+            <a href="https://www.icai.org/eservices.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Members Services</a>
+
+            <a href="https://www.icai.org/eservices.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Students Services</a>
+
+            <a href="https://www.icai.org/eservices.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Firms Services</a>
+
+            <a href="https://www.icai.org/eservices.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Other Services</a>
+
+            <a href="https://www.icai.org/post/exam"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Examination Services</a>
+          </div>
+        </li>
+
+        <!-- Know Your CPE Hours -->
+        <li class="relative group pr-4 py-2">
+          <a href="gallery.html"
+            class="hover:text-blue-200 flex items-center gap-1 transition-transform hover:-translate-y-1 duration-200">
+            Gallery</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu (Hidden by default, shown when hamburger icon is clicked) -->
+      <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-1 bg-[#05007e] text-white rounded-b-md shadow-lg">
+        <li class="py-2 px-4"><a href="#">Home</a></li>
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Overview
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li>
+              <a class="text-white" href="about.html">About ICAi Muzaffarpur</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/overview.shtml?mod=2">The Council</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/overview.shtml?mod=3">ICIA Network</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/overview.shtml?mod=4">Key Statics</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/overview.shtml?mod=5">Right To Information Act</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/overview.shtml?mod=6">Annual Report</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/overview.shtml?mod=7">Year Books – ICAI</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://circ.icai.org/">Central Council</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Mobile Members Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Committees
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li>
+              <a class="text-white" href="contiMuzaffarpur.html">Committees Of Muzaffarpur</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/committees.shtml?mod=2">Standing</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/committees.shtml?mod=1">Non – Standing</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/committees.shtml?mod=3">Directorates</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/committees.shtml?mod=4">Others</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/committees.shtml?mod=5">Non – Standing</a>
+            </li>
+          </ul>
+        </li>
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Members
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li>
+              <a class="text-white" href="MembersEvents.html">Events</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=1">Council Guidelines</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=2">Courses</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/post/election-2024">Election 2024</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=4">Empanelment</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=5">Examnation</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=6">Funds/Awards</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=7">Members – FAQs</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=8">Placements</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/members.shtml?mod=9">Regulatory</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Mobile Students Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Students
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li>
+              <a class="text-white" href="https://www.icai.org/students.shtml?mod=1">Announcements</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/students.shtml?mod=2">BoS Knowledge Portal</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/students.shtml?mod=3">Chartered Accountancy Course</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/students.shtml?mod=4">Examnation</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/students.shtml?mod=5">Students – FAQs</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Mobile Resources Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Resources
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=1">Accounting Standards</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=2">Accounting Standards for Local
+                Bodies</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=3">List of Exposure Drafts</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=4">Guidance Notes</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=5">ICAI Valuation Standards</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=6">Standards on Internal Audit</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=7">Engagement and Quality Control
+                Standards</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=8">Recent Opinions & Advisory Service
+                Rules of Expert Advisory
+                Committee</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/resources.shtml?mod=9">Free Download – Online
+                Publications</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Mobile E-Services Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            E-Services
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li>
+              <a class="text-white" href="https://www.icai.org/eservices.shtml?mod=1">Members Services</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/eservices.shtml?mod=2">Students Services</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/eservices.shtml?mod=3">Firms Services</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/eservices.shtml?mod=4">Other Services</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://www.icai.org/post/exam">Examination Services</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Know Your CPE Hours -->
+        <li class="py-2 px-4 pb-5"><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Swiper Image Carousel Section -->
+  <section class="py-8 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper rounded-lg overflow-hidden bg-white relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="image/12. Pics of Dias.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/3.a Lighting of Lamp by President SIr.JPG"
+              class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/11. Pics of Stone- inauguration.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover"
+              alt="Image 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/g6.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/15. Congratulation by President sir to Treasurer of thye branch- CA Rakesh Kumar Sinha.JPG"
+              class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 4" />
+          </div>
+
+        </div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination relative mt-[30px]"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next custom-nav"></div>
+        <div class="swiper-button-prev custom-nav"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+  <!-- About & Team Section -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- About Us Section -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#2B386D]">About Muzaffarpur Branch</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Learn more about the values, mission, and services of the Muzaffarpur Branch of CIRC of ICAI.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
+        <!-- Text Content -->
+        <div class="lg:w-1/2 space-y-6">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            The Muzaffarpur Branch of CIRC of ICAI plays a vital role in shaping the future of the accounting profession
+            in the region. We are committed to providing quality professional education, guidance, and support to our
+            members and students.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Our mission is to foster an environment of continuous learning, ethical practice, and professional
+            development while contributing to the advancement of the accounting community through impactful initiatives
+            and events.
+          </p>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#2B386D]">Mission & Values</h3>
+            <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2">
+              <li>Provide exceptional education and training for members and students.</li>
+              <li>Promote ethical practices and professional excellence in all fields of accounting.</li>
+              <li>Encourage networking, collaboration, and skill development among professionals.</li>
+              <li>Support the growth of the accounting profession in Muzaffarpur and beyond.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Image Content -->
+        <div class="lg:w-1/2">
+          <img src="image/15. President sir briefing to Media.JPG" alt="Muzaffarpur Branch"
+            class="rounded-lg shadow-xl w-full h-auto object-cover">
+        </div>
+      </div>
+
+
+      <!-- Scrollable Team Cards -->
+      <div id="cardScrollContainer" class="overflow-x-auto scrollbar-hide scroll-smooth -mx-4 px-4 sm:px-0">
+        <div class="flex gap-4 sm:gap-6 pb-6 min-w-fit">
+
+          <!-- Card 1 -->
+          <div
+            class="w-[80vw] sm:w-[240px] h-[340px] bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-5 flex-shrink-0 text-center group">
+            <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-3 overflow-hidden">
+              <img src="image/output (1).png" alt="CA Shashi Bhushan Kumar" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 group-hover:text-[#294a70]">CA Shashi Bhushan Kumar</h3>
+            <p class="text-sm text-blue-900">Chairman</p>
+            <p class="text-sm text-gray-500 mt-3 leading-snug">
+              Leads the branch vision, executes ICAI policies, and oversees major decisions and initiatives for growth.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="w-[80vw] sm:w-[240px] h-[340px] bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-5 flex-shrink-0 text-center group">
+            <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-3 overflow-hidden">
+              <img src="image/output (2).png" alt="CA Vikash Kumar Singh" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 group-hover:text-[#294a70]">CA Vikash Kumar Singh</h3>
+            <p class="text-sm text-blue-900">Vice-Chairman</p>
+            <p class="text-sm text-gray-500 mt-3 leading-snug">
+              Supports branch-level policy development, promotes digital growth and upholds transparency in
+              decision-making.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="w-[80vw] sm:w-[240px] h-[340px] bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-5 flex-shrink-0 text-center group">
+            <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-3 overflow-hidden">
+              <img src="image/output 3.png" alt="CA Ankit Hisaria" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 group-hover:text-[#294a70]">CA Ankit Hisaria</h3>
+            <p class="text-sm text-blue-900">MCM</p>
+            <p class="text-sm text-gray-500 mt-3 leading-snug">
+              Drives student mentoring programs, coordinates learning workshops and empowers academic excellence.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="w-[80vw] sm:w-[240px] h-[340px] bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-5 flex-shrink-0 text-center group">
+            <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-3 overflow-hidden">
+              <img src="image/rakesah 4.png" alt="CA Rakesh Kumar Sinha" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 group-hover:text-[#294a70]">CA Rakesh Kumar Sinha</h3>
+            <p class="text-sm text-blue-900">MCM</p>
+            <p class="text-sm text-gray-500 mt-3 leading-snug">
+              Oversees daily operations, event logistics, and professional seminars for a seamless branch experience.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="w-[80vw] sm:w-[240px] h-[340px] bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-5 flex-shrink-0 text-center group">
+            <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-3 overflow-hidden">
+              <img src="image/output 6.png" alt="CA Abhijeet Ranjan" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 group-hover:text-[#294a70]">CA Abhijeet Ranjan</h3>
+            <p class="text-sm text-blue-900">MCM</p>
+            <p class="text-sm text-gray-500 mt-3 leading-snug">
+              Supports member education, innovation, and digital outreach with a people-first approach.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="w-[80vw] sm:w-[240px] h-[340px] bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-5 flex-shrink-0 text-center group">
+            <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-3 overflow-hidden">
+              <img src="image/output 5.png" alt="CA Niket Nathani" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 group-hover:text-[#294a70]">CA Niket Nathani</h3>
+            <p class="text-sm text-blue-900">MCM</p>
+            <p class="text-sm text-gray-500 mt-3 leading-snug">
+              Brings strong insights on compliance and contributes to governance of branch functions and ethics.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="mt-6 flex justify-center space-x-4">
+        <button onclick="scrollCards(-300)"
+          class="bg-[#294a70] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1d3557] transition">
+          &#8592; Prev
+        </button>
+        <button onclick="scrollCards(300)"
+          class="bg-[#294a70] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1d3557] transition">
+          Next &#8594;
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll Script -->
+    <script>
+      function scrollCards(amount) {
+        document.getElementById('cardScrollContainer').scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    </script>
+
+    <!-- Hide Scrollbar CSS -->
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </section>
+
+
+
+
+  <!-- Chairmen Message -->
+
+  <section class="py-10 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Card -->
+      <div
+        class="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row animate__animated animate__fadeInUp">
+
+        <!-- Left: Message -->
+        <div class="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+          <h2 class="text-3xl sm:text-4xl font-semibold text-[#2B386D] mb-6">
+            A Message From Chairman
+          </h2>
+
+          <div class="text-base text-gray-700 space-y-5 leading-relaxed max-h-[620px] overflow-y-auto pr-2">
+            <p>
+              Dear Members and Aspiring Cas With great humility and profound pride, I pen this message as the
+              <strong>First Elected Chairman</strong> of the Newly Constituted (Notified on 22nd January 2024 &
+              Inaugurated on 16th August 2024) <strong>Muzaffarpur District Branch of CIRC of ICAI</strong>.
+            </p>
+
+            <p>
+              This isn’t just a role—it is a dream realized. A dream that began years ago when I first stepped into the
+              world of accountancy as a student, filled with ambition, guided by mentors, and driven by the singular
+              goal of adding “CA” before my name. Today, having walked that journey, I stand before you not only as a
+              proud member of ICAI but as a torchbearer of this newly formed branch—entrusted with the responsibility to
+              lead, to inspire, and to serve.
+            </p>
+
+            <p>
+              Our branch is more than just an institution—it is a symbol of growth, opportunity, and unity for the CA
+              fraternity in this region. We now have a dedicated platform to nurture talent, promote professional
+              excellence, and build a stronger community.
+            </p>
+
+            <p class="font-semibold text-[#2B386D]">From “DRISHTI” as Secretary 2024-25:</p>
+            <ul class="list-disc list-inside space-y-1">
+              <li>D - Digitalization</li>
+              <li>R - Research</li>
+              <li>I - Integrity</li>
+              <li>S - Skills</li>
+              <li>H - Handholding</li>
+              <li>T - Transparency</li>
+              <li>I - Independence</li>
+            </ul>
+
+            <p class="font-semibold text-[#2B386D] mt-4">To “VISHWASNIYA” as Chairman 2025-26:</p>
+            <ul class="list-disc list-inside space-y-1">
+              <li>V - Vision for Viksit Bharat</li>
+              <li>I - Integrity & Ethics</li>
+              <li>S - Sustainability & Social Impact</li>
+              <li>H - Holistic Professional and Leadership Development</li>
+              <li>W - Wellness & Work-life Balance</li>
+              <li>A - Accelerating Digital Transformation</li>
+              <li>S - Stakeholder Engagement</li>
+              <li>N - Nation-first Approach</li>
+              <li>I - Innovation & Entrepreneurship</li>
+              <li>Y - Youth and Women Led Development</li>
+              <li>A - Accountability, Trust and Transparency</li>
+            </ul>
+
+            <p>
+              <strong>Our Vision Forward:</strong><br />
+              As Chairman, my focus will be on building:
+            </p>
+            <ul class="list-disc list-inside space-y-1">
+              <li>A vibrant hub for members with seminars, workshops & networking.</li>
+              <li>A launchpad for students with mentorship and career support.</li>
+              <li>A pillar of credibility aligned with ICAI’s values.</li>
+              <li>An inclusive, ethical, and innovative community.</li>
+            </ul>
+
+            <p>
+              This branch belongs to all of us. I invite every member and student to participate, share ideas, and shape
+              its future. Together, let’s build not just a branch, but a legacy.
+            </p>
+
+            <p class="font-semibold">
+              With warm regards,<br />
+              CA. Shashi Bhushan Kumar<br />
+              Chairman – Muzaffarpur District Branch (CIRC)<br />
+              The Institute of Chartered Accountants of India (ICAI)<br />
+              Mob: 7761952501<br />
+              Email: <a href="mailto:cashashi2007@gmail.com" class="text-blue-600 underline">cashashi2007@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="w-full lg:w-1/2 flex items-center justify-center p-4">
+          <div class="w-[520px] h-[420px] sm:w-[460px] sm:h-[420px] flex items-center justify-center">
+            <img src="image/message-01.jpg" alt="Chairman CA. Shashi Bhushan Kumar" loading="lazy"
+              decoding="async" class="w-full h-full object-cover object-center rounded-lg shadow-lg" />
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore section -->
+
+  <section class="background-container py-10 overflow-hidden bg-cover bg-center">
+    <div class="relative z-10 container mx-auto px-4">
+      <!-- Title -->
+      <h2 class="text-3xl font-semibold text-[#2B386D] text-center mb-10">
+        Explore Muzaffarpur Branch
+      </h2>
+
+      <!-- Responsive Grid Layout -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center">
+        <!-- Card 1 -->
+        <a href="about.html"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/list.png" alt="About Us"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            About Us
+          </h2>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="contiMuzaffarpur.html"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/group.png" alt="Branch Committees"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Branch Committees
+          </h2>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="MembersEvents.html"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/event-1.png" alt="Members Events"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Members Events
+          </h2>
+        </a>
+
+
+
+        <!-- Card 5 -->
+        <a href="contiMuzaffarpur.html"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/team.png" alt="Branch Members"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Branch Members
+          </h2>
+        </a>
+
+
+
+        <!-- Card 7 -->
+        <a href="https://ccg.icai.org/"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/business.png" alt="Career Counselling"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Career Counselling
+          </h2>
+        </a>
+
+
+
+        <a href="https://www.icai.org/post/election-2024"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/voting-box.png" alt="Election - 2025"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Election - 2025
+          </h2>
+        </a>
+
+        <a href="https://www.icai.org/students.shtml?mod=2"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/conference.png" alt="Student Events"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Student Events
+          </h2>
+        </a>
+
+        <a href="https://cpeapp.icai.org/cpeAdmin/login"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/team.png" alt="Branch Members"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            CPE
+          </h2>
+        </a>
+
+
+        <a href="https://www.icai.org/post/president-message-july2024"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/team.png" alt="Branch Members"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            Branch Achievement
+          </h2>
+        </a>
+
+
+        <a href="MembersEvents.html"
+          class="flex flex-col items-center justify-center text-center bg-white border border-transparent rounded-2xl shadow-lg p-6 min-h-[220px] w-full max-w-[180px] transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300">
+          <div
+            class="w-20 h-20 rounded-full border-3 border-[#2B386D] flex items-center justify-center mb-5 bg-blue-50">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/team.png" alt="Branch Members"
+              class="w-12 h-12 object-contain" />
+          </div>
+          <h2 class="text-base sm:text-lg font-medium text-black whitespace-nowrap">
+            News
+          </h2>
+        </a>
+
+
+
+   
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-white px-6 py-8 flex flex-wrap justify-center gap-6">
+    <!-- Upcoming Events Card -->
+    <div class="w-[360px] min-h-[570px] bg-white rounded-lg shadow-md border border-gray-200">
+      <h2 class="text-lg font-semibold text-white text-center bg-[#05007e] px-4 py-2 rounded-t-md">
+        Upcoming - Events
+      </h2>
+      <div class="p-4">
+        <p class="italic text-sm text-green-600 leading-relaxed">
+          15/07/2025 - Hosting the World Youth Skills Day under the aegis of PSEC ICAI on 15/07/2025 at 02:00 PM sharp.
+          Members are requested to attend it and make it successful. For more details contact us on 9289825204
+        </p>
+        <ul class="mt-6 list-disc list-inside text-gray-700 text-sm space-y-2">
+          <li>-</li>
+          <li>-</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Motto Image Card -->
+    <div class="w-[360px] min-h-[570px] bg-white rounded-lg shadow-md border border-gray-200">
+      <h2 class="text-lg font-semibold text-white text-center bg-[#05007e] px-4 py-2 rounded-t-md">
+        Our Motto
+      </h2>
+      <div class="p-4">
+        <img src="https://icaidbg.org/wp-content/uploads/2024/12/Picsart_24-12-04_14-40-30-482-scaled.jpg"
+          alt="Motto Image" class="w-full h-[400px] object-contain rounded-md mx-auto" />
+      </div>
+    </div>
+
+    <!-- ICAI Muzaffarpur Info Card -->
+    <div class="w-[360px] min-h-[570px] bg-white rounded-lg shadow-md border border-gray-200">
+      <h2 class="text-lg font-semibold text-white text-center bg-[#05007e] px-4 py-2 rounded-t-md">
+        ICAI Muzaffarpur
+      </h2>
+      <div class="p-4 text-justify text-sm text-gray-800 leading-relaxed">
+        <p>
+          It is a statutory body established under the Chartered Accountants Act, 1949 (Act No.XXXVIII of 1949) for the
+          regulation of the profession of Chartered Accountants in India. Muzaffarpur Branch of CIRC of ICAI Empowering
+          Accountants Since 2024 with Dynamic Academic Programs and Workshops.
+        </p>
+        <p class="mt-2">
+          Muzaffarpur Branch was inaugurated by Hon'ble President Shri CA. Ranjeet Kumar Agarwal on 16th August 2024.
+          The Branch covers Muzaffarpur, Madhubani and Samastipur with 200+ members associated with it.
+        </p>
+        <p class="mt-2">
+          Muzaffarpur Branch is regularly holding academic and other programs including various seminars, workshops and
+          meetings. Student's programmes & activities are also given equal importance. Very soon, facilities like
+          computer training, industrial visits, study tours, and coaching classes will be available.
+        </p>
+        <a href="about.html">
+          <button
+            class="mt-4 inline-flex items-center gap-2 bg-gray-100 px-4 py-2 text-sm font-medium rounded-full shadow hover:shadow-md transition">
+            <span>🔘</span> Read More
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Explore Our ICAI Services  -->
+  <section class="py-12 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2B386D]">
+          Explore Our ICAI Services
+        </h2>
+        <p class="text-lg text-gray-600 mt-2">
+          One click access to useful ICAI portals & tools
+        </p>
+      </div>
+
+      <!-- Marquee Wrapper -->
+      <div class="relative w-full">
+        <div class="animate-marquee flex gap-6 w-max">
+          <div class="flex gap-6">
+            <!-- Card 1 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://cds.icai.org/#/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/7.jpg" alt="CDS"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">CDS</h2>
+              </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://learning.icai.org/iDH/icai/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/2.jpg" alt="DLH"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Digital Learning Hub</h2>
+              </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://help.icai.org/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/6.jpg" alt="Esahaayataa"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Esahaayataa</h2>
+              </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://www.icai.org/post/exam" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/exam.jpg" alt="Examination"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Examination</h2>
+              </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://mobile.icai.org/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/icainow.jpg" alt="ICAI Now"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">ICAI Now</h2>
+              </a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="gallery.html" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/photogallery.jpg" alt="Photo Gallery"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Photo Gallery</h2>
+              </a>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://eservices.icai.org/per/g21/pub/1666/SelfServices/templates/Login%20Folder21052019122446/Login%20Folder/ICAI%20Phase%20II%20Login%20Page521052019122546.html"
+                class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/3.jpg" alt="Self Service Portal"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Self Service Portal</h2>
+              </a>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://udin.icai.org/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/8.jpg" alt="UDIN"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">UDIN</h2>
+              </a>
+            </div>
+          </div>
+
+          <!-- Duplicate for loop -->
+          <div class="flex gap-6">
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://learning.icai.org/iDH/icai/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/2.jpg" alt="DLH"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Digital Learning Hub</h2>
+              </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://help.icai.org/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/6.jpg" alt="Esahaayataa"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Esahaayataa</h2>
+              </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://www.icai.org/post/exam" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/exam.jpg" alt="Examination"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">Examination</h2>
+              </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+              <a href="https://mobile.icai.org/" class="block text-center">
+                <img src="https://icaidbg.org/wp-content/uploads/2024/12/icainow.jpg" alt="ICAI Now"
+                  class="w-20 h-20 object-cover mx-auto mb-2" />
+                <h2 class="text-sm font-semibold">ICAI Now</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- explore Our servoces -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2B386D]">
+          Explore Our Services
+        </h2>
+        <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+          Find everything you need in one place – from gallery and
+          announcements to placements and career opportunities.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Photo Gallery Card -->
+        <a href="gallery.html"
+          class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
+          <div
+            class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv1.jpg" alt="Gallery"
+              class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
+            PHOTO GALLERY
+          </h3>
+          <p class="text-sm text-gray-600">
+            View all event memories in one place.
+          </p>
+        </a>
+
+
+
+        <!-- E-Shaayata Card -->
+        <a href="https://help.icai.org/"
+          class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
+          <div
+            class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv4.jpg" alt="E-shaayata"
+              class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
+            E-SHAAYATA
+          </h3>
+          <p class="text-sm text-gray-600">
+            Online helpdesk and support portal for members.
+          </p>
+        </a>
+
+        <!-- Announcement Card -->
+        <a href="https://www.icai.org/category/bos-important-announcements"
+          class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
+          <div
+            class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Announcement"
+              class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
+            ANNOUNCEMENT
+          </h3>
+          <p class="text-sm text-gray-600">
+            Stay updated with latest branch announcements.
+          </p>
+        </a>
+
+        <!-- Reach Us Card -->
+        <a href="#contact"
+          class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
+          <div
+            class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Reach Us"
+              class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
+            REACH US
+          </h3>
+          <p class="text-sm text-gray-600">
+            Find our office and contact location easily.
+          </p>
+        </a>
+
+        <!-- Alumni Network Card -->
+        <a href="https://www.icai.org/overview.shtml"
+          class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
+          <div
+            class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Alumni Network"
+              class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
+            ALUMNI NETWORK
+          </h3>
+          <p class="text-sm text-gray-600">
+            Connect with past students & professionals.
+          </p>
+        </a>
+
+        <!-- Feedback Card -->
+        <a href="https://www.icai.org/eservices.shtml"
+          class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
+          <div
+            class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Feedback"
+              class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
+            FEEDBACK
+          </h3>
+          <p class="text-sm text-gray-600">
+            Share your experience and suggestions with us.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Annual Membership Form -->
+<section class="py-12 bg-gray-100">
+  <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-8">
+    <h2 class="text-3xl font-bold text-center text-[#2B386D] mb-6">Annual Membership Form</h2>
+    <form id="membershipForm" class="space-y-6">
+
+      <!-- Personal Information -->
+      <div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-4">Personal Details</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="fullName" required placeholder="Full Name" class="p-3 border rounded-md w-full" />
+          <input type="email" name="email" required placeholder="Email Address" class="p-3 border rounded-md w-full" />
+          <input type="tel" name="mobile" required placeholder="Mobile Number" class="p-3 border rounded-md w-full" />
+          <input type="text" name="address" placeholder="Address" class="p-3 border rounded-md w-full" />
+        </div>
+      </div>
+
+      <!-- Professional Information -->
+      <div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-4">Professional Details</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="membershipNo" placeholder="ICAI Membership Number" class="p-3 border rounded-md w-full" />
+          <input type="text" name="firmName" placeholder="Firm Name (if any)" class="p-3 border rounded-md w-full" />
+          <input type="text" name="designation" placeholder="Designation" class="p-3 border rounded-md w-full" />
+          <input type="text" name="qualification" placeholder="Qualification" class="p-3 border rounded-md w-full" />
+        </div>
+      </div>
+
+      <!-- Payment Section -->
+      <div>
+        <h3 class="text-xl font-semibold text-gray-700 mb-4">Membership Payment</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <select name="paymentMode" required class="p-3 border rounded-md w-full">
+            <option value="">Select Payment Mode</option>
+            <option value="online">Online</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="upi">UPI</option>
+            <option value="cash">Cash</option>
+          </select>
+          <input type="text" name="transactionId" placeholder="Transaction ID / Ref No." class="p-3 border rounded-md w-full" />
+        </div>
+        <p class="text-sm text-gray-500 mt-2">Membership Fee: ₹500/year</p>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="bg-[#2B386D] text-white px-6 py-3 rounded-md hover:bg-[#1e2c56] transition">
+          Submit Membership
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Address contact  -->
+  <section id="contact">
+    <section class="w-full px-6 sm:px-10 py-16 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-gray-800 mb-4">
+            Contact Us
+          </h1>
+          <div class="h-1 w-24 bg-[#020381] mx-auto rounded-full"></div>
+          <p class="text-gray-600 mt-4 text-lg">
+            Get in touch with ICAI Muzaffarpur
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <!-- Left Column: Contact Information -->
+          <div class="flex flex-col h-full">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              Contact Details
+            </h2>
+
+            <div class="space-y-6 flex-1">
+              <!-- Location -->
+              <div
+                class="flex items-start space-x-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Office Address
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    ICAI BHAWAN, 1ST FLOOR P R COMPLEX VIVEK VIHAR<br />
+                    NEAR NARAYANPUR ROAD, MITHANPURA<br />
+                    MUZAFFARPUR BIHAR-842002
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div
+                class="flex items-start space-x-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Phone Number
+                  </h3>
+                  <p class="text-gray-600 text-lg font-medium">
+                    +91 9289825204
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div
+                class="flex items-start space-x-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Email Address
+                  </h3>
+                  <p class="text-gray-600 text-lg font-medium">
+                    muzaffarpur@icai.org
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Google Map -->
+          <div class="flex flex-col h-full">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              Our Location
+            </h2>
+            <div class="flex-1 rounded-xl overflow-hidden shadow-md border-2 border-gray-100">
+              <iframe class="w-full h-full" loading="lazy"
+                src="https://maps.google.com/maps?q=ICAI%20BHAWAN%2C%20Muzaffarpur%2C%20Bihar&t=m&z=15&output=embed&iwloc=near"
+                title="ICAI Muzaffarpur Location" style="border: 0; min-height: 350px">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- Footer section  -->
+  <section class="w-full bg-[rgb(2,3,129)] text-white py-8 border-t border-white" id="footer_section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Column 1: Home/About Navigation -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-xl font-semibold mb-2">Quick Links</h2>
+          <div class="">
+            <a href="#" class="block text-white hover:text-blue-300 transition duration-200">
+              Home
+            </a>
+            <a href="about.html" class="block text-white hover:text-blue-300 transition duration-200">
+              About Us
+            </a>
+            <a href="contiMuzaffarpur.html" class="block text-white hover:text-blue-300 transition duration-200">
+              Services
+            </a>
+            <a href="MembersEvents.html" class="block text-white hover:text-blue-300 transition duration-200">
+              Events
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Important Links -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-xl font-semibold mb-2">Important Links</h2>
+
+          <div>
+            <a href="https://incometaxindia.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              Income Tax
+            </a>
+            <a href="https://cbic.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              cbic.gov.in
+            </a>
+            <a href="https://gst.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              gst.gov.in
+            </a>
+            <a href="https://mca.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              mca.gov.in
+            </a>
+            <a href="https://biharcommercial.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              biharcommercial.gov.in
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-lg font-semibold mb-2">Contact</h2>
+          <ul class="space-y-1">
+            <li class="text-sm">
+              <i class="fas fa-envelope mr-2"></i>
+              muzaffarpur@icai.org
+            </li>
+            <li class="text-sm">
+              <i class="fas fa-phone mr-2"></i>
+              +91 9289825204
+            </li>
+            <li class="text-sm">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              Muzaffarpur, Bihar
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Social Media Links -->
+        <div class="flex flex-col items-center sm:items-start">
+          <h2 class="text-lg font-semibold mb-2">Follow Us</h2>
+          <div class="flex space-x-4">
+
+            <a href="https://www.instagram.com/icai.muzaffarpur.branch?fbclid=IwY2xjawLqzz1leHRuA2FlbQIxMABicmlkETFuT0Z4eU9Xa1c0WWFUVW5EAR4NG9E5V0uRucmSk42NHd2_7aaRtuHgSG8ImbVPbueVf6deM4QMn0KxP9ElVg_aem_bTUTPVG33zHD_P-PoPvcoQ"
+              target="_blank" class="hover:text-pink-400 transition duration-200 transform hover:scale-110">
+              <i class="fab fa-instagram fa-2x p-2 bg-white/10 rounded-full"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61578743033498" target="_blank"
+              class="hover:text-blue-300 transition duration-200 transform hover:scale-110">
+              <i class="fab fa-facebook fa-2x p-2 bg-white/10 rounded-full"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom border line -->
+      <div class="mt-8 pt-4 border-t border-white/20 text-center">
+        <div class="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+          <p class="text-sm">
+            © 2024-2025 All rights reserved to the ICAI Muzaffarpur
+            Branch
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+      // Check if link is external (not same origin)
+      const isExternal = new URL(link.href).origin !== window.location.origin;
+      if (isExternal) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  </script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

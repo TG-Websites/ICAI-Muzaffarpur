@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <title>ICAI Commitee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <!-- ICAI Header Start -->
+  <div class="flex items-center justify-between bg-[#05007e] py-4 px-4 shadow-md hidden sm:flex">
+    <!-- Logo -->
+    <a href="https://icaidbg.org" class="flex-shrink-0">
+      <img src="https://icaidbg.org/wp-content/uploads/2024/09/cropped-cropped-icai_logo__1_-removebg-preview.png"
+        alt="ICAI Logo" class="w-[100px] h-[100px] transform scale-110">
+    </a>
+    <!-- Text center -->
+    <div class="text-center flex-1">
+      <h2 class="text-xl sm:text-2xl font-semibold leading-snug text-white">
+        Muzaffarpur Branch of CIRC of <br />
+        The Institute of Chartered Accountants of India <br />
+        <span class="text-base sm:text-lg text-white font-normal">(Setup By An Act of Parliament)</span>
+      </h2>
+    </div>
+  </div>
+
+  <!-- Main Navbar with Top Border -->
+  <nav class="border-t-2 bg-[#05007e] text-white fixed top-0 left-0 w-full z-50 sm:static">
+    <div class="container mx-auto px-4">
+      <!-- Hamburger Icon (Visible on small screens) -->
+      <div class="flex justify-between items-center py-3 md:hidden">
+        <a href="" class="flex-shrink-0">
+          <img src="https://icaidbg.org/wp-content/uploads/2024/09/cropped-cropped-icai_logo__1_-removebg-preview.png"
+            alt="ICAI Logo" class="w-[70px] h-[70px] transform scale-110">
+        </a>
+        <button id="hamburger-icon" class="text-white text-2xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Menu (For Mobile & Desktop) -->
+      <ul id="navbar" class="h-10 hidden md:flex flex-wrap justify-center space-x-6">
+        <li class="relative group border-r-2 border-white pr-4 py-2">
+          <a href="index.html"
+            class="hover:text-blue-200 flex items-center gap-1 transition-transform hover:-translate-y-1 duration-200">Home</a>
+        </li>
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Overview
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+
+            <a href="about.html" class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">About ICAI
+              Muzaffarpur</a>
+            <a href="https://www.icai.org/overview.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">The Council</a>
+            <a href="https://www.icai.org/overview.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">ICAI Network</a>
+            <a href="https://www.icai.org/overview.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Key Statics</a>
+            <a href="https://www.icai.org/overview.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Right To Information Act</a>
+            <a href="https://www.icai.org/overview.shtml?mod=6"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Annual Report</a>
+            <a href="https://www.icai.org/overview.shtml?mod=7"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Year Books – ICAI</a>
+            <a href="https://circ.icai.org/"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Central Council</a>
+
+          </div>
+
+
+        </li>
+
+        <!-- Dropdown for Members -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Committees
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+
+            <a href="contiMuzaffarpur.html"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Committees Of Muzaffarpur</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Standing</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Non – Standing</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Directorates</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Others</a>
+
+            <a href="https://www.icai.org/committees.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Secretarie To The Committee</a>
+          </div>
+
+        </li>
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Members
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+
+            <a href="MembersEvents.html"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Events</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Council Guidelines</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Courses</a>
+
+            <a href="https://www.icai.org/post/election-2024"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Election 2024</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Empanelment</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Examination</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=6"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Funds/Awards</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=7"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Members – FAQs</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=8"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Placements</a>
+
+            <a href="https://www.icai.org/members.shtml?mod=9"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Regulatory</a>
+          </div>
+
+        </li>
+
+        <!-- Students Dropdown -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Students
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+
+            <a href="https://www.icai.org/students.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Announcements</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">BoS Knowledge Portal</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Chartered Accountancy Course</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Examination</a>
+
+            <a href="https://www.icai.org/students.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Students – FAQs</a>
+          </div>
+
+        </li>
+
+        <!-- Resources Dropdown -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            Resources
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-80 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+
+            <a href="https://www.icai.org/resources.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Accounting Standards</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Accounting Standards for Local
+              Bodies</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">List of Exposure Drafts</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Guidance Notes</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=5"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">ICAI Valuation Standards</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=6"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Standards on Internal Audit</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=7"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Engagement and Quality Control
+              Standards</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=8"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Recent Opinions & Advisory Service
+              Rules of Expert Advisory Committee</a>
+
+            <a href="https://www.icai.org/resources.shtml?mod=9"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Free Download – Online
+              Publications</a>
+          </div>
+
+        </li>
+
+        <!-- E-Services Dropdown -->
+        <li class="relative group border-r-2 border-white pr-4">
+          <a href="#"
+            class="section-toggle hover:text-blue-200 flex items-center gap-1 py-1 transition-transform hover:-translate-y-1 duration-200">
+            E-Services
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform transition-all duration-200 dropdown-icon"
+              data-icon="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 hidden group-hover:block w-60 bg-[#05007e] text-white rounded-b-md shadow-lg z-10">
+
+            <a href="https://www.icai.org/eservices.shtml?mod=1"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Members Services</a>
+
+            <a href="https://www.icai.org/eservices.shtml?mod=2"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Students Services</a>
+
+            <a href="https://www.icai.org/eservices.shtml?mod=3"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Firms Services</a>
+
+            <a href="https://www.icai.org/eservices.shtml?mod=4"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Other Services</a>
+
+            <a href="https://www.icai.org/post/exam"
+              class="block px-4 py-2 hover:bg-white hover:text-[#05007e] transition">Examination Services</a>
+          </div>
+
+        </li>
+
+        <!-- Know Your CPE Hours -->
+        <li class="relative group pr-4 py-2">
+          <a href="gallery.html"
+            class="hover:text-blue-200 flex items-center gap-1 transition-transform hover:-translate-y-1 duration-200">Gallery</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu (Hidden by default, shown when hamburger icon is clicked) -->
+      <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-1 bg-[#05007e] text-white rounded-b-md shadow-lg">
+        <li class="py-2 px-4"><a href="#">Home</a></li>
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Overview
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li><a class="text-white" href="about.html">About ICAi Muzaffarpur</a></li>
+            <li><a class="text-white" href="https://www.icai.org/overview.shtml?mod=2">The Council</a></li>
+            <li><a class="text-white" href="https://www.icai.org/overview.shtml?mod=3">ICIA Network</a></li>
+            <li><a class="text-white" href="https://www.icai.org/overview.shtml?mod=4">Key Statics</a></li>
+            <li><a class="text-white" href="https://www.icai.org/overview.shtml?mod=5">Right To Information Act</a></li>
+            <li><a class="text-white" href="https://www.icai.org/overview.shtml?mod=6">Annual Report</a></li>
+            <li><a class="text-white" href="https://www.icai.org/overview.shtml?mod=7">Year Books – ICAI</a></li>
+            <li><a class="text-white" href="https://circ.icai.org/">Central Council</a></li>
+
+          </ul>
+        </li>
+
+        <!-- Mobile Members Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Committees
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li><a class="text-white" href="contiMuzaffarpur.html">Committees Of Muzaffarpur</a></li>
+            <li><a class="text-white" href="https://www.icai.org/committees.shtml?mod=2">Standing</a></li>
+            <li><a class="text-white" href="https://www.icai.org/committees.shtml?mod=1">Non – Standing</a></li>
+            <li><a class="text-white" href="https://www.icai.org/committees.shtml?mod=3">Directorates</a></li>
+            <li><a class="text-white" href="https://www.icai.org/committees.shtml?mod=4">Others</a></li>
+            <li><a class="text-white" href="https://www.icai.org/committees.shtml?mod=5">Non – Standing</a></li>
+          </ul>
+        </li>
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Members
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li><a class="text-white" href="MembersEvents.html">Events</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=1">Council Guidelines</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=2">Courses</a></li>
+            <li><a class="text-white" href="https://www.icai.org/post/election-2024">Election 2024</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=4">Empanelment</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=5">Examnation</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=6">Funds/Awards</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=7">Members – FAQs</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=8">Placements</a></li>
+            <li><a class="text-white" href="https://www.icai.org/members.shtml?mod=9">Regulatory</a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile Students Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Students
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li><a class="text-white" href="https://www.icai.org/students.shtml?mod=1">Announcements</a></li>
+            <li><a class="text-white" href="https://www.icai.org/students.shtml?mod=2">BoS Knowledge Portal</a></li>
+            <li><a class="text-white" href="https://www.icai.org/students.shtml?mod=3">Chartered Accountancy Course</a>
+            </li>
+            <li><a class="text-white" href="https://www.icai.org/students.shtml?mod=4">Examnation</a></li>
+            <li><a class="text-white" href="https://www.icai.org/students.shtml?mod=5">Students – FAQs</a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile Resources Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            Resources
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=1">Accounting Standards</a></li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=2">Accounting Standards for Local
+                Bodies</a></li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=3">List of Exposure Drafts</a></li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=4">Guidance Notes</a></li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=5">ICAI Valuation Standards</a>
+            </li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=6">Standards on Internal Audit</a>
+            </li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=7">Engagement and Quality Control
+                Standards</a></li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=8">Recent Opinions & Advisory
+                Service Rules of Expert Advisory Committee</a>
+            </li>
+            <li><a class="text-white" href="https://www.icai.org/resources.shtml?mod=9">Free Download – Online
+                Publications</a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile E-Services Dropdown -->
+        <li class="py-2 px-4">
+          <a href="#" class="flex justify-between items-center section-toggle">
+            E-Services
+            <svg class="w-8 h-8 fill-current mt-[2px] ml-auto transform rotate-0 dropdown-icon" data-icon="down"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M5.5 7.5L10 12l4.5-4.5z" />
+            </svg>
+          </a>
+          <ul class="pl-3 py-2 space-y-2 hidden transition-[height] duration-300 overflow-hidden">
+            <li><a class="text-white" href="https://www.icai.org/eservices.shtml?mod=1">Members Services</a></li>
+            <li><a class="text-white" href="https://www.icai.org/eservices.shtml?mod=2">Students Services</a></li>
+            <li><a class="text-white" href="https://www.icai.org/eservices.shtml?mod=3">Firms Services</a></li>
+            <li><a class="text-white" href="https://www.icai.org/eservices.shtml?mod=4">Other Services</a></li>
+            <li><a class="text-white" href="https://www.icai.org/post/exam">Examination Services</a></li>
+
+          </ul>
+        </li>
+
+        <!-- Know Your CPE Hours -->
+        <li class="py-2 px-4 pb-5"><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    // Hamburger toggle
+    document.getElementById("hamburger-icon").addEventListener("click", function () {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    const dropdownSections = document.querySelectorAll(".section-toggle");
+    dropdownSections.forEach((toggle) => {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const parentLi = toggle.closest("li");
+        const icon = parentLi.querySelector(".dropdown-icon");
+        const dropdown = parentLi.querySelector("ul");
+
+        // Skip if desktop dropdown (no ul inside)
+        if (!dropdown) return;
+
+        const isOpen = !dropdown.classList.contains("hidden");
+
+        // Close all others
+        dropdownSections.forEach((section) => {
+          const otherLi = section.closest("li");
+          const otherDropdown = otherLi.querySelector("ul");
+          const otherIcon = otherLi.querySelector(".dropdown-icon");
+
+          if (otherDropdown && otherDropdown !== dropdown) {
+            otherDropdown.style.height = "0px";
+            otherDropdown.classList.add("overflow-hidden");
+            setTimeout(() => {
+              otherDropdown.classList.add("hidden");
+            }, 300);
+            otherIcon.style.transform = "rotate(0deg)";
+            otherLi.classList.remove("bg-white");
+          }
+          section.classList.remove("text-black");
+        });
+
+        // Toggle selected one
+        if (isOpen) {
+          dropdown.style.height = dropdown.scrollHeight + "px";
+          requestAnimationFrame(() => {
+            dropdown.style.height = "0px";
+          });
+          icon.style.transform = "rotate(0deg)";
+          parentLi.classList.remove("bg-white");
+          setTimeout(() => {
+            dropdown.classList.add("hidden");
+          }, 300);
+          toggle.classList.remove("text-black");
+        } else {
+          dropdown.classList.remove("hidden");
+          dropdown.style.height = "0px";
+          requestAnimationFrame(() => {
+            dropdown.style.height = dropdown.scrollHeight + "px";
+          });
+          icon.style.transform = "rotate(180deg)";
+          parentLi.classList.add("bg-[#05007e]");
+          toggle.classList.add("text-white");
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Committees Hero Section with Background Image -->
+  <section
+    class="relative bg-cover bg-center bg-no-repeat min-h-[90vh] px-4 sm:px-6 lg:px-8 flex items-center justify-center text-center"
+    style="background-image: url('image/Mannaging\ \ members.jpg');">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+    <!-- Centered Content -->
+    <div class="relative z-10 max-w-4xl mx-auto text-white">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+        Committees of Muzaffarpur
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl font-medium">
+        Explore the dedicated committees of the
+        Muzaffarpur Branch of CIRC of ICAI
+        – working together to promote excellence, ethics, and professional development.
+      </p>
+
+      <!-- Decorative underline -->
+      <div class="mt-6 flex justify-center">
+        <span class="w-16 h-1 bg-[#f0c93d] rounded-full"></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- committe Members -->
+
+  <h1 class="text-3xl sm:text-4xl font-bold text-center text-[#271E59] mt-12 mb-4">
+    Managing Committee
+  </h1>
+
+
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <section class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <!-- Cards Slider (Scrollable on small screens) -->
+    <div class="overflow-x-auto scrollbar-hide -mx-4 px-4">
+      <div id="slider" class="flex gap-4 transition-transform duration-500 ease-in-out">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+
+    <!-- Navigation Buttons (Now visible on all screen sizes) -->
+    <div class="flex justify-center gap-4 mt-10">
+      <button onclick="moveSlide(-1)"
+        class="bg-[#271E59] text-white px-5 py-2 border border-[#271E59] rounded-full hover:bg-white hover:text-[#271E59] transition">
+        ← Previous
+      </button>
+      <button onclick="moveSlide(1)"
+        class="bg-[#271E59] text-white px-5 py-2 border border-[#271E59] rounded-full hover:bg-white hover:text-[#271E59] transition">
+        Next →
+      </button>
+    </div>
+  </section>
+
+  <script>
+    const members = [
+      {
+        name: "CA Shashi Bhushan Kumar",
+        role: "Chairman",
+        phone: "7761952501",
+        email: "shashi2007@gmail.com",
+        image: "image/output (1).png"
+      },
+      {
+        name: "CA Vikash Kumar Singh",
+        role: "Vice-Chairman",
+        phone: "9661448568",
+        email: "vikash81_singh@yahoo.co.in",
+        image: "image/output (2).png"
+      },
+      {
+        name: "CA Ankit Hisaria",
+        role: "Secretary",
+        phone: "9038825030",
+        email: "cahisaria@gmail.com",
+        image: "image/output 3.png"
+      },
+      {
+        name: "CA Rakesh Kumar Sinha",
+        role: "Treasurer",
+        phone: "9199525618",
+        email: "carakeshsinha10@gmail.com",
+        image: "image/rakesah 4.png"
+      },
+      {
+        name: "CA Niket Nathani",
+        role: "Ex. Member",
+        phone: "7542032616",
+        email: "niketnathani.001@gmail.com",
+        image: "image/output 5.png"
+      },
+      {
+        name: "CA Abhijeet Ranjan",
+        role: "Ex. Member",
+        phone: "9905606888",
+        email: "abhijeet.icai@gmail.com",
+        image: "image/output 6.png"
+      },
+
+    ];
+
+    const slider = document.getElementById("slider");
+    let currentIndex = 0;
+
+    function createCard(member) {
+      return `
+      <div class="bg-white border rounded-xl shadow-md w-56 shrink-0 p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+        <img src="${member.image}" alt="${member.name}" class="w-28 h-28 object-cover rounded-full mb-4" />
+        <h2 class="text-base font-semibold text-[#271E59]">${member.name}</h2>
+        <p class="text-sm text-gray-500 mb-3">${member.role}</p>
+        <div class="flex justify-center gap-4 text-[#271E59] text-lg">
+          <a href="tel:${member.phone}" title="Call"><i class="fas fa-phone-alt"></i></a>
+          <a href="https://wa.me/${member.phone}" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:${member.email}" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    `;
+    }
+
+    function renderSlider() {
+      slider.innerHTML = members.map(createCard).join("");
+      updateSlider();
+    }
+
+    function updateSlider() {
+      const offset = currentIndex * -240; // Adjust card width for shifting
+      slider.style.transform = `translateX(${offset}px)`;
+    }
+
+    function moveSlide(direction) {
+      const maxIndex = members.length - 1;
+      currentIndex = Math.min(Math.max(currentIndex + direction, 0), maxIndex);
+      updateSlider();
+    }
+
+    renderSlider();
+  </script>
+
+  <style>
+    /* Optional scrollbar hiding for aesthetics */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+
+
+  <!-- <!-Tax  Commitee -->
+
+  <section class="py-6">
+    <h1 class="text-3xl font-semibold text-center text-[#271E59]">Taxation Committee</h1>
+    <div class="overflow-x-auto px-4 py-6">
+      <div class="ea-advanced-data-table-wrap">
+        <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
+          <input type="search" id="searchDisciplinary" placeholder="Search"
+            class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto"
+            onkeyup="filterDisciplinaryTable()">
+        </div>
+
+        <table id="disciplinaryTable"
+          class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
+          <thead class="bg-gray-100 text-xs font-semibold uppercase">
+            <tr>
+              <th class="px-4 py-2 border">S.No</th>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Designation</th>
+              <th class="px-4 py-2 border">Phone</th>
+              <th class="px-4 py-2 border">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">1</td>
+              <td class="px-4 py-2 border">CA. VIKASH KUMAR SINGH</td>
+              <td class="px-4 py-2 border">Chairman</td>
+              <td class="px-4 py-2 border">9661448568</td>
+              <td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">2</td>
+              <td class="px-4 py-2 border">CA. SHASHI BHUSHAN KUMAR</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">7761952501</td>
+              <td class="px-4 py-2 border">cashashi2007@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">3</td>
+              <td class="px-4 py-2 border">CA. ANKIT HISARIA</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9038825030</td>
+              <td class="px-4 py-2 border">cahisaria@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">4</td>
+              <td class="px-4 py-2 border">CA. RAKESH KUMAR SINHA</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9199525618</td>
+              <td class="px-4 py-2 border">carakeshsinha10@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">5</td>
+              <td class="px-4 py-2 border">CA. NIKET NATHANI</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">7542032616</td>
+              <td class="px-4 py-2 border">NIKETNATHANI.001@GMAIL.COM</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">6</td>
+              <td class="px-4 py-2 border">CA. ABHIJEET RANJAN</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9905606888</td>
+              <td class="px-4 py-2 border">abhijeet.icai@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">7</td>
+              <td class="px-4 py-2 border">CA. SAURABH KUMAR</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">8130262999</td>
+              <td class="px-4 py-2 border">sabyca@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">8</td>
+              <td class="px-4 py-2 border">CA. RAJESH KUMAR</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">8882226429</td>
+              <td class="px-4 py-2 border">rajeshkumar823@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">9</td>
+              <td class="px-4 py-2 border">CA. ADITYA KUMAR TULSYAN</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">9798993600</td>
+              <td class="px-4 py-2 border">ADITYA_TULSYAN@YAHOO.COM</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="ea-advanced-data-table-pagination ea-advanced-data-table-pagination-button mt-4 text-center">
+          <!-- Pagination if needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function filterDisciplinaryTable() {
+      let input = document.getElementById('searchDisciplinary');
+      let filter = input.value.toUpperCase();
+      let table = document.getElementById('disciplinaryTable');
+      let rows = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let nameCell = cells[1]; // Name column
+        if (nameCell) {
+          let textValue = nameCell.textContent || nameCell.innerText;
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            rows[i].style.display = '';
+          } else {
+            rows[i].style.display = 'none';
+          }
+        }
+      }
+    }
+  </script>
+
+
+
+
+  <script>
+    function filterDisciplinaryTable() {
+      let input = document.getElementById('searchDisciplinary');
+      let filter = input.value.toUpperCase();
+      let table = document.getElementById('disciplinaryTable');
+      let rows = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let nameCell = cells[1]; // Name column (2nd column)
+        if (nameCell) {
+          let textValue = nameCell.textContent || nameCell.innerText;
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            rows[i].style.display = ''; // Show row
+          } else {
+            rows[i].style.display = 'none'; // Hide row
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- CPE Committee -->
+
+  <section class="py-6">
+    <h1 class="text-3xl font-semibold text-center text-[#271E59]">CPE Committee</h1>
+    <div class="overflow-x-auto px-4 py-6">
+      <div class="ea-advanced-data-table-wrap">
+        <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
+          <input type="search" id="searchCPE" placeholder="Search"
+            class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto"
+            onkeyup="filterCPECommitteeTable()">
+        </div>
+
+        <table id="cpeTable" class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
+          <thead class="bg-gray-100 text-xs font-semibold uppercase">
+            <tr>
+              <th class="px-4 py-2 border">S.No</th>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Designation</th>
+              <th class="px-4 py-2 border">Phone</th>
+              <th class="px-4 py-2 border">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">1</td>
+              <td class="px-4 py-2 border">CA. Shashi Bhushan Kumar</td>
+              <td class="px-4 py-2 border">Chairman</td>
+              <td class="px-4 py-2 border">7761952501</td>
+              <td class="px-4 py-2 border">cashashi2007@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">2</td>
+              <td class="px-4 py-2 border">CA. Vikash Kumar Singh</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9661448568</td>
+              <td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">3</td>
+              <td class="px-4 py-2 border">CA. Ankit Hisaria</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9038825030</td>
+              <td class="px-4 py-2 border">cahisaria@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">4</td>
+              <td class="px-4 py-2 border">CA. Rakesh Kumar Sinha</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9199525618</td>
+              <td class="px-4 py-2 border">carakeshsinha10@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">5</td>
+              <td class="px-4 py-2 border">CA. Niket Nathani</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">7542032616</td>
+              <td class="px-4 py-2 border">niketnathani.001@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">6</td>
+              <td class="px-4 py-2 border">CA. Abhijeet Ranjan</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9905606888</td>
+              <td class="px-4 py-2 border">abhijeet.icai@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">7</td>
+              <td class="px-4 py-2 border">CA. Prakash Kumar</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">7739481200</td>
+              <td class="px-4 py-2 border">acapk2019@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">8</td>
+              <td class="px-4 py-2 border">CA. Munna Kumar Singh</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">7070852455</td>
+              <td class="px-4 py-2 border">fcamunnasingh@gmail.com</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2 border">9</td>
+              <td class="px-4 py-2 border">CA. Ayush Nemani</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">8235147608</td>
+              <td class="px-4 py-2 border">ayushnemani1995@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    function filterCPECommitteeTable() {
+      let input = document.getElementById('searchCPE');
+      let filter = input.value.toUpperCase();
+      let table = document.getElementById('cpeTable');
+      let rows = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let nameCell = cells[1]; // Name column (2nd column)
+        if (nameCell) {
+          let textValue = nameCell.textContent || nameCell.innerText;
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            rows[i].style.display = ''; // Show row
+          } else {
+            rows[i].style.display = 'none'; // Hide row
+          }
+        }
+      }
+    }
+  </script>
+
+
+  <!-- Students Committee Section -->
+  <section class="py-6">
+    <h1 class="text-3xl font-semibold text-center text-[#271E59]">Students Committee</h1>
+    <p class="text-center text-gray-600 mt-2 max-w-3xl mx-auto">
+      Objective of this Sub-Committee is to assist the Managing Committee in the functioning of the Branch.
+    </p>
+    <div class="overflow-x-auto px-4 py-6">
+      <div class="ea-advanced-data-table-wrap">
+        <div class="ea-advanced-data-table-search-wrap ea-advanced-data-table-search-right mb-4">
+          <input type="search" id="searchStudents" placeholder="Search"
+            class="ea-advanced-data-table-search p-2 border rounded-md w-64 ml-auto" onkeyup="filterStudentsTable()">
+        </div>
+
+        <table id="studentsTable"
+          class="min-w-full border-collapse border border-gray-300 text-sm text-left text-gray-700">
+          <thead class="bg-gray-100 text-xs font-semibold uppercase">
+            <tr>
+              <th class="px-4 py-2 border">S.No</th>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Position</th>
+              <th class="px-4 py-2 border">Mob. Number</th>
+              <th class="px-4 py-2 border">E-Mail ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border">1</td>
+              <td class="px-4 py-2 border">CA. NIKET NATHANI</td>
+              <td class="px-4 py-2 border">Chairman</td>
+              <td class="px-4 py-2 border">7542032616</td>
+              <td class="px-4 py-2 border">niketnathani.001@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">2</td>
+              <td class="px-4 py-2 border">CA. SHASHI BHUSHAN KUMAR</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">7761952501</td>
+              <td class="px-4 py-2 border">cashashi2007@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">3</td>
+              <td class="px-4 py-2 border">CA. VIKASH KUMAR SINGH</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9661448568</td>
+              <td class="px-4 py-2 border">vikash81_singh@yahoo.co.in</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">4</td>
+              <td class="px-4 py-2 border">CA. ANKIT HISARIA</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9038825030</td>
+              <td class="px-4 py-2 border">cahisaria@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">5</td>
+              <td class="px-4 py-2 border">CA. RAKESH KUMAR SINHA</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9199525618</td>
+              <td class="px-4 py-2 border">carakeshsinha10@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">6</td>
+              <td class="px-4 py-2 border">CA. ABHIJEET RANJAN</td>
+              <td class="px-4 py-2 border">MCM</td>
+              <td class="px-4 py-2 border">9905606888</td>
+              <td class="px-4 py-2 border">abhijeet.icai@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">7</td>
+              <td class="px-4 py-2 border">CA. HIMANSHU KUMAR NATHANI</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">9555393149</td>
+              <td class="px-4 py-2 border">himanshu.nathani@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">8</td>
+              <td class="px-4 py-2 border">CA. AJEET KUMAR</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">8700979603</td>
+              <td class="px-4 py-2 border">ajeet.pr1992@yahoo.com</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">9</td>
+              <td class="px-4 py-2 border">CA. RAJNISH KUMAR</td>
+              <td class="px-4 py-2 border">Co-Opted Member</td>
+              <td class="px-4 py-2 border">9015552470</td>
+              <td class="px-4 py-2 border">cakumarrajnish@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function filterStudentsTable() {
+      let input = document.getElementById('searchStudents');
+      let filter = input.value.toUpperCase();
+      let table = document.getElementById('studentsTable');
+      let rows = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let nameCell = cells[1];
+        if (nameCell) {
+          let textValue = nameCell.textContent || nameCell.innerText;
+          rows[i].style.display = textValue.toUpperCase().indexOf(filter) > -1 ? '' : 'none';
+        }
+      }
+    }
+  </script>
+
+
+
+  <!-- footer Section -->
+
+  <section class="w-full bg-[rgb(2,3,129)] text-white py-8 border-t border-white" id="footer_section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Column 1: Home/About Navigation -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-xl font-semibold mb-2">Quick Links</h2>
+          <div class="">
+            <a href="index.html" class="block text-white hover:text-blue-300 transition duration-200">
+              Home
+            </a>
+            <a href="about.html" class="block text-white hover:text-blue-300 transition duration-200">
+              About Us
+            </a>
+            <a href="contiMuzaffarpur.html" class="block text-white hover:text-blue-300 transition duration-200">
+              Services
+            </a>
+            <a href="MembersEvents.html" class="block text-white hover:text-blue-300 transition duration-200">
+              Events
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Important Links -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-xl font-semibold mb-2">Important Links</h2>
+
+          <div>
+            <a href="https://incometaxindia.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              Income Tax
+            </a>
+            <a href="https://cbic.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              cbic.gov.in
+            </a>
+            <a href="https://gst.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              gst.gov.in
+            </a>
+            <a href="https://mca.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              mca.gov.in
+            </a>
+            <a href="https://biharcommercial.gov.in" target="_blank"
+              class="flex items-center justify-center sm:justify-start text-white hover:text-gray-300 transition">
+              biharcommercial.gov.in
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-lg font-semibold mb-2">Contact</h2>
+          <ul class="space-y-1">
+            <li class="text-sm">
+              <i class="fas fa-envelope mr-2"></i>
+              muzaffarpur@icai.org
+            </li>
+            <li class="text-sm">
+              <i class="fas fa-phone mr-2"></i>
+              +91 9289825204
+            </li>
+            <li class="text-sm">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              Muzaffarpur, Bihar
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Social Media Links -->
+        <div class="flex flex-col items-center sm:items-start">
+          <h2 class="text-lg font-semibold mb-2">Follow Us</h2>
+          <div class="flex space-x-4">
+
+            <a href="https://www.instagram.com/icai.muzaffarpur.branch?fbclid=IwY2xjawLqzz1leHRuA2FlbQIxMABicmlkETFuT0Z4eU9Xa1c0WWFUVW5EAR4NG9E5V0uRucmSk42NHd2_7aaRtuHgSG8ImbVPbueVf6deM4QMn0KxP9ElVg_aem_bTUTPVG33zHD_P-PoPvcoQ"
+              target="_blank" class="hover:text-pink-400 transition duration-200 transform hover:scale-110">
+              <i class="fab fa-instagram fa-2x p-2 bg-white/10 rounded-full"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61578743033498" target="_blank"
+              class="hover:text-blue-300 transition duration-200 transform hover:scale-110">
+              <i class="fab fa-facebook fa-2x p-2 bg-white/10 rounded-full"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom border line -->
+      <div class="mt-8 pt-4 border-t border-white/20 text-center">
+        <div class="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+          <p class="text-sm">
+            © 2024-2025 All rights reserved to the ICAI Muzaffarpur
+            Branch
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+      // Check if link is external (not same origin)
+      const isExternal = new URL(link.href).origin !== window.location.origin;
+      if (isExternal) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

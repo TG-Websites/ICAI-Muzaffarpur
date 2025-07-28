@@ -1,0 +1,11 @@
+/* theme.css */
+
+:root {
+  --primary-color: #1e90ff;
+  --secondary-color: #05007e;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #111111;
+  --button-bg: #1e90ff;
+  --button-text: #ffffff;
+}
