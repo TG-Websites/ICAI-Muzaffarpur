@@ -65,6 +65,8 @@
       /* Remove overlay */
     }
   </style>
+   <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -542,45 +544,45 @@
     </div>
   </nav>
 
-  <!-- Swiper Image Carousel Section -->
-  <section class="py-8 bg-white">
-    <div class="container mx-auto px-4">
-      <!-- Swiper Container -->
-      <div class="swiper mySwiper rounded-lg overflow-hidden bg-white relative">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="image/12. Pics of Dias.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 5" />
-          </div>
-          <div class="swiper-slide">
-            <img src="image/3.a Lighting of Lamp by President SIr.JPG"
-              class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="image/11. Pics of Stone- inauguration.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover"
-              alt="Image 2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="image/g6.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 3" />
-          </div>
-          <div class="swiper-slide">
-            <img src="image/15. Congratulation by President sir to Treasurer of thye branch- CA Rakesh Kumar Sinha.JPG"
-              class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 4" />
-          </div>
-
+ <!-- Swiper Image Carousel Section -->
+<section class="bg-white pt-0">
+  <div class="w-full">
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper rounded-none overflow-hidden bg-white relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/12. Pics of Dias.JPG" class="w-full  h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 5" />
         </div>
-
-        <!-- Swiper Pagination -->
-        <div class="swiper-pagination relative mt-[30px]"></div>
-
-        <!-- Navigation Buttons -->
-        <div class="swiper-button-next custom-nav"></div>
-        <div class="swiper-button-prev custom-nav"></div>
+        <div class="swiper-slide">
+          <img src="image/3.a Lighting of Lamp by President SIr.JPG"
+            class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/11. Pics of Stone- inauguration.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover"
+            alt="Image 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/g6.JPG" class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 3" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="image/15. Congratulation by President sir to Treasurer of thye branch- CA Rakesh Kumar Sinha.JPG"
+            class="w-full h-80 md:h-96 lg:h-[500px] object-cover" alt="Image 4" />
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination relative mt-[30px]"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
+    </div>
+  </div>
+</section>
+
+
+ 
 
 
 
@@ -714,38 +716,33 @@
         </div>
       </div>
 
-      <!-- Navigation Buttons -->
-      <div class="mt-6 flex justify-center space-x-4">
-        <button onclick="scrollCards(-300)"
-          class="bg-[#294a70] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1d3557] transition">
-          &#8592; Prev
-        </button>
-        <button onclick="scrollCards(300)"
-          class="bg-[#294a70] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1d3557] transition">
-          Next &#8594;
-        </button>
-      </div>
+
     </div>
-
-    <!-- Scroll Script -->
-    <script>
-      function scrollCards(amount) {
-        document.getElementById('cardScrollContainer').scrollBy({ left: amount, behavior: 'smooth' });
-      }
-    </script>
-
-    <!-- Hide Scrollbar CSS -->
-    <style>
-      .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-      }
-
-      .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
   </section>
+
+
+
+  <!-- Scroll Script -->
+  <script>
+    function scrollCards(amount) {
+      document.getElementById('cardScrollContainer').scrollBy({ left: amount, behavior: 'smooth' });
+    }
+  </script>
+
+
+
+  <!-- Hide Scrollbar CSS -->
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
 
 
 
@@ -756,7 +753,9 @@
     <div class="container mx-auto px-4">
       <!-- Card -->
       <div
-        class="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row animate__animated animate__fadeInUp">
+        class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row animate__animated animate__fadeInUp">
+
+
 
         <!-- Left: Message -->
         <div class="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
@@ -841,12 +840,13 @@
         <!-- Right: Image -->
         <div class="w-full lg:w-1/2 flex items-center justify-center p-4">
           <div class="w-[520px] h-[420px] sm:w-[460px] sm:h-[420px] flex items-center justify-center">
-            <img src="image/message-01.jpg" alt="Chairman CA. Shashi Bhushan Kumar" loading="lazy"
-              decoding="async" class="w-full h-full object-cover object-center rounded-lg shadow-lg" />
+            <img src="image/message-01.jpg" alt="Chairman CA. Shashi Bhushan Kumar" loading="lazy" decoding="async"
+              class="w-full h-full object-cover sm:object-center object-left rounded-lg shadow-lg">
           </div>
+
         </div>
 
-        
+
       </div>
     </div>
   </section>
@@ -997,7 +997,7 @@
 
 
 
-   
+
 
 
 
@@ -1067,7 +1067,21 @@
   </section>
 
 
-  <!-- Explore Our ICAI Services  -->
+  <!-- 👇 Add this style block in your <head> or global CSS -->
+  <style>
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  </style>
+
+  <!-- 👇 ICAI Services Section -->
   <section class="py-12 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-8">
@@ -1079,125 +1093,89 @@
         </p>
       </div>
 
-      <!-- Marquee Wrapper -->
-      <div class="relative w-full">
-        <div class="animate-marquee flex gap-6 w-max">
-          <div class="flex gap-6">
-            <!-- Card 1 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://cds.icai.org/#/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/7.jpg" alt="CDS"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">CDS</h2>
-              </a>
-            </div>
+      <!-- 👇 Scrollable Wrapper with hidden scrollbar -->
+      <div class="relative w-full overflow-x-auto hide-scrollbar">
+        <div class="inline-flex gap-6 w-max whitespace-nowrap">
 
-            <!-- Card 2 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://learning.icai.org/iDH/icai/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/2.jpg" alt="DLH"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Digital Learning Hub</h2>
-              </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://help.icai.org/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/6.jpg" alt="Esahaayataa"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Esahaayataa</h2>
-              </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://www.icai.org/post/exam" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/exam.jpg" alt="Examination"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Examination</h2>
-              </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://mobile.icai.org/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/icainow.jpg" alt="ICAI Now"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">ICAI Now</h2>
-              </a>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="gallery.html" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/photogallery.jpg" alt="Photo Gallery"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Photo Gallery</h2>
-              </a>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://eservices.icai.org/per/g21/pub/1666/SelfServices/templates/Login%20Folder21052019122446/Login%20Folder/ICAI%20Phase%20II%20Login%20Page521052019122546.html"
-                class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/3.jpg" alt="Self Service Portal"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Self Service Portal</h2>
-              </a>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://udin.icai.org/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/8.jpg" alt="UDIN"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">UDIN</h2>
-              </a>
-            </div>
+          <!-- Card 1 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://cds.icai.org/#/" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/7.jpg" alt="CDS"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">CDS</h2>
+            </a>
           </div>
 
-          <!-- Duplicate for loop -->
-          <div class="flex gap-6">
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://learning.icai.org/iDH/icai/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/2.jpg" alt="DLH"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Digital Learning Hub</h2>
-              </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://help.icai.org/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/6.jpg" alt="Esahaayataa"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Esahaayataa</h2>
-              </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://www.icai.org/post/exam" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/exam.jpg" alt="Examination"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">Examination</h2>
-              </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
-              <a href="https://mobile.icai.org/" class="block text-center">
-                <img src="https://icaidbg.org/wp-content/uploads/2024/12/icainow.jpg" alt="ICAI Now"
-                  class="w-20 h-20 object-cover mx-auto mb-2" />
-                <h2 class="text-sm font-semibold">ICAI Now</h2>
-              </a>
-            </div>
+          <!-- Card 2 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://learning.icai.org/iDH/icai/" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/2.jpg" alt="DLH"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">Digital Learning Hub</h2>
+            </a>
           </div>
+
+          <!-- Card 3 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://help.icai.org/" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/6.jpg" alt="Esahaayataa"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">Esahaayataa</h2>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://www.icai.org/post/exam" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/exam.jpg" alt="Examination"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">Examination</h2>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://mobile.icai.org/" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/icainow.jpg" alt="ICAI Now"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">ICAI Now</h2>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="gallery.html" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/photogallery.jpg" alt="Photo Gallery"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">Photo Gallery</h2>
+            </a>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://eservices.icai.org/per/g21/pub/1666/SelfServices/templates/Login%20Folder21052019122446/Login%20Folder/ICAI%20Phase%20II%20Login%20Page521052019122546.html"
+              class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/3.jpg" alt="Self Service Portal"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">Self Service Portal</h2>
+            </a>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="w-48 sm:w-56 h-56 p-4 bg-white rounded-lg shadow flex flex-col items-center justify-center">
+            <a href="https://udin.icai.org/" class="block text-center">
+              <img src="https://icaidbg.org/wp-content/uploads/2024/12/8.jpg" alt="UDIN"
+                class="w-20 h-20 object-cover mx-auto mb-2" />
+              <h2 class="text-sm font-semibold">UDIN</h2>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
+
+
 
 
   <!-- explore Our servoces -->
@@ -1255,8 +1233,7 @@
           class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
           <div
             class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
-            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Announcement"
-              class="w-full h-full object-cover" />
+            <img src="./image/Annoncement.jpeg" alt="Announcement" class="w-full h-full object-cover" />
           </div>
           <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
             ANNOUNCEMENT
@@ -1287,8 +1264,7 @@
           class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
           <div
             class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
-            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Alumni Network"
-              class="w-full h-full object-cover" />
+            <img src="./image/alumni.webp" alt="Alumni Network" class="w-full h-full object-cover" />
           </div>
           <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
             ALUMNI NETWORK
@@ -1303,8 +1279,7 @@
           class="group text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl h-64 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]">
           <div
             class="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300">
-            <img src="https://icaidbg.org/wp-content/uploads/2024/12/serv6.jpg" alt="Feedback"
-              class="w-full h-full object-cover" />
+            <img src="./image/feedback.jpeg" alt="Feedback" class="w-full h-full object-cover" />
           </div>
           <h3 class="text-lg font-semibold text-[#2B386D] mb-1">
             FEEDBACK
@@ -1319,58 +1294,61 @@
 
 
   <!-- Annual Membership Form -->
-<section class="py-12 bg-gray-100">
-  <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-8">
-    <h2 class="text-3xl font-bold text-center text-[#2B386D] mb-6">Annual Membership Form</h2>
-    <form id="membershipForm" class="space-y-6">
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-8">
+      <h2 class="text-3xl font-bold text-center text-[#2B386D] mb-6">Annual Membership Form</h2>
+      <form id="membershipForm" class="space-y-6">
 
-      <!-- Personal Information -->
-      <div>
-        <h3 class="text-xl font-semibold text-gray-700 mb-4">Personal Details</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input type="text" name="fullName" required placeholder="Full Name" class="p-3 border rounded-md w-full" />
-          <input type="email" name="email" required placeholder="Email Address" class="p-3 border rounded-md w-full" />
-          <input type="tel" name="mobile" required placeholder="Mobile Number" class="p-3 border rounded-md w-full" />
-          <input type="text" name="address" placeholder="Address" class="p-3 border rounded-md w-full" />
+        <!-- Personal Information -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Personal Details</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="fullName" required placeholder="Full Name" class="p-3 border rounded-md w-full" />
+            <input type="email" name="email" required placeholder="Email Address"
+              class="p-3 border rounded-md w-full" />
+            <input type="tel" name="mobile" required placeholder="Mobile Number" class="p-3 border rounded-md w-full" />
+            <input type="text" name="address" placeholder="Address" class="p-3 border rounded-md w-full" />
+          </div>
         </div>
-      </div>
 
-      <!-- Professional Information -->
-      <div>
-        <h3 class="text-xl font-semibold text-gray-700 mb-4">Professional Details</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input type="text" name="membershipNo" placeholder="ICAI Membership Number" class="p-3 border rounded-md w-full" />
-          <input type="text" name="firmName" placeholder="Firm Name (if any)" class="p-3 border rounded-md w-full" />
-          <input type="text" name="designation" placeholder="Designation" class="p-3 border rounded-md w-full" />
-          <input type="text" name="qualification" placeholder="Qualification" class="p-3 border rounded-md w-full" />
+        <!-- Professional Information -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Professional Details</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="membershipNo" placeholder="ICAI Membership Number"
+              class="p-3 border rounded-md w-full" />
+            <input type="text" name="firmName" placeholder="Firm Name (if any)" class="p-3 border rounded-md w-full" />
+            <input type="text" name="designation" placeholder="Designation" class="p-3 border rounded-md w-full" />
+            <input type="text" name="qualification" placeholder="Qualification" class="p-3 border rounded-md w-full" />
+          </div>
         </div>
-      </div>
 
-      <!-- Payment Section -->
-      <div>
-        <h3 class="text-xl font-semibold text-gray-700 mb-4">Membership Payment</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <select name="paymentMode" required class="p-3 border rounded-md w-full">
-            <option value="">Select Payment Mode</option>
-            <option value="online">Online</option>
-            <option value="bank">Bank Transfer</option>
-            <option value="upi">UPI</option>
-            <option value="cash">Cash</option>
-          </select>
-          <input type="text" name="transactionId" placeholder="Transaction ID / Ref No." class="p-3 border rounded-md w-full" />
+        <!-- Payment Section -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Membership Payment</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <select name="paymentMode" required class="p-3 border rounded-md w-full">
+              <option value="">Select Payment Mode</option>
+              <option value="online">Online</option>
+              <option value="bank">Bank Transfer</option>
+              <option value="upi">UPI</option>
+              <option value="cash">Cash</option>
+            </select>
+            <input type="text" name="transactionId" placeholder="Transaction ID / Ref No."
+              class="p-3 border rounded-md w-full" />
+          </div>
+          <p class="text-sm text-gray-500 mt-2">Membership Fee: ₹500/year</p>
         </div>
-        <p class="text-sm text-gray-500 mt-2">Membership Fee: ₹500/year</p>
-      </div>
 
-      <!-- Submit -->
-      <div class="text-center">
-        <button type="submit" class="bg-[#2B386D] text-white px-6 py-3 rounded-md hover:bg-[#1e2c56] transition">
-          Submit Membership
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
+        <!-- Submit -->
+        <div class="text-center">
+          <button type="submit" class="bg-[#2B386D] text-white px-6 py-3 rounded-md hover:bg-[#1e2c56] transition">
+            Submit Membership
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
 
   <!-- Address contact  -->
