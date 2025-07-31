@@ -93,7 +93,7 @@
     <div class="container mx-auto px-4">
       <!-- Hamburger Icon (Visible on small screens) -->
       <div class="flex justify-between items-center py-3 md:hidden">
-        <a href="" class="flex-shrink-0">
+        <a href="./index.html" class="flex-shrink-0">
           <img src="https://icaidbg.org/wp-content/uploads/2024/09/cropped-cropped-icai_logo__1_-removebg-preview.png"
             alt="ICAI Logo" class="w-[70px] h-[70px] transform scale-110" />
         </a>
@@ -328,7 +328,7 @@
 
       <!-- Mobile Menu (Hidden by default, shown when hamburger icon is clicked) -->
       <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-1 bg-[#05007e] text-white rounded-b-md shadow-lg">
-        <li class="py-2 px-4"><a href="/index.html">Home</a></li>
+        <li class="py-2 px-4"><a href="/">Home</a></li>
         <li class="py-2 px-4">
           <a href="#" class="flex justify-between items-center section-toggle">
             Overview
@@ -544,35 +544,44 @@
     </div>
   </nav>
 
+<!-- Swiper Image Carousel Section -->
 <section class="bg-white pt-0">
   <div class="w-full">
+    <!-- Swiper Container -->
     <div class="swiper mySwiper rounded-none overflow-hidden bg-white relative">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="image/12. Pics of Dias.JPG" class="w-full aspect-[4/3] sm:h-auto object-cover object-top" alt="Image 5" />
+          <img src="image/12. Pics of Dias.JPG"
+            class="w-full h-[400px] md:h-96 lg:h-[500px] object-cover" alt="Image 5" />
         </div>
         <div class="swiper-slide">
-          <img src="image/3.a Lighting of Lamp by President SIr.JPG" class="w-full aspect-[4/3] sm:h-auto object-cover object-top" alt="Image 1" />
+          <img src="image/3.a Lighting of Lamp by President SIr.JPG"
+            class="w-full h-[400px] md:h-96 lg:h-[500px] object-cover" alt="Image 1" />
         </div>
         <div class="swiper-slide">
-          <img src="image/11. Pics of Stone- inauguration.JPG" class="w-full aspect-[4/3] sm:h-auto object-cover object-top" alt="Image 2" />
+          <img src="image/11. Pics of Stone- inauguration.JPG"
+            class="w-full h-[400px] md:h-96 lg:h-[500px] object-cover" alt="Image 2" />
         </div>
         <div class="swiper-slide">
-          <img src="image/g6.JPG" class="w-full aspect-[4/3] sm:h-auto object-cover object-top" alt="Image 3" />
+          <img src="image/g6.JPG"
+            class="w-full h-[400px] md:h-96 lg:h-[500px] object-cover" alt="Image 3" />
         </div>
         <div class="swiper-slide">
-          <img src="image/15. Congratulation by President sir to Treasurer of thye branch- CA Rakesh Kumar Sinha.JPG"
-            class="w-full aspect-[4/3] sm:h-auto object-cover object-top" alt="Image 4" />
+          <img
+            src="image/15. Congratulation by President sir to Treasurer of thye branch- CA Rakesh Kumar Sinha.JPG"
+            class="w-full h-[400px] md:h-96 lg:h-[500px] object-cover" alt="Image 4" />
         </div>
       </div>
 
-      <div class="swiper-pagination mt-3 sm:mt-6"></div>
-      <div class="swiper-button-next custom-nav hidden sm:block"></div>
-      <div class="swiper-button-prev custom-nav hidden sm:block"></div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination relative mt-[30px]"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
     </div>
   </div>
 </section>
-
 
 
 
